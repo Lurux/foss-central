@@ -17,3 +17,5 @@ function showtype(type) {
 		}
 	}
 }
+
+i = 0;
