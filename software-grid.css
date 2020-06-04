@@ -1,0 +1,25 @@
+.software-grid i.fas, .software-grid i.fab {
+	font-size: larger;
+	width: 30px;
+	text-align: center;
+}
+
+.software-grid > a {
+	display: flex;
+}
+
+.software-grid > a > div {
+	flex-grow: 1;
+}
+
+.software-grid > .bad > i.fa-times {
+	color: red;
+}
+
+.software-grid > .good > i.fa-check {
+	color: green;
+}
+
+.software-grid .bad {
+	margin-top: 20px;
+}
