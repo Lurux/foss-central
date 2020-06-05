@@ -14,9 +14,9 @@
 	<script src="software.js"></script>
 </head>
 
-<body>
+<body onload="if(window.frameElement) { document.getElementById('header').remove(); }">
 
-<header class="padding">
+<header id="header" class="padding">
 	<div class="frame">
 		<a href="ressources.html"><b><i class="fas fa-arrow-left"></i> Ressources</b></a>
 		<a href="index.html" style="float: right"><b><span class="nosmall">FOSS Central </span><i class="fas fa-archive"></i></b></a>

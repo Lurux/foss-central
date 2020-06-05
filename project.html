@@ -26,7 +26,7 @@
 <main class="frame">
 
 	<section class="section card blue hover">
-		<b style="float: right;" onclick="this.parentElement.style.display='none';"><i class="fas fa-times"></i></b><b>Project</b><br/>Please note this website is still in beta ! Some pages may be under construction.
+		<b style="float: right;" onclick="this.parentElement.style.display='none';"><i class="fas fa-times"></i></b><b>Project</b><br/>Please note this website is still in beta ! Some pages are still under construction.
 	</section>
 
 	<section class="section">
@@ -39,6 +39,49 @@
 	</section>
 
 </main>
+
+
+
+<div id="modal">
+	<header class="section padding">
+		<p class="hover" onclick="closemodal()"><b><i class="fas fa-arrow-left"></i><span class="nosmall"> Back</span></b></p>
+		<p><span id="mod-loading"><i class="fas fa-circle-notch fa-spin"></i> </span><span id="mod-title" class="current">example</span></p>
+		<p class="hover" id="search-modal" onclick="opensearch()"><b><i class="fas fa-search"></i> <i class="fas fa-caret-down"></i></b></p>
+		<a href="" target="_blank" rel="noopener noreferrer"><b><span class="nosmall">Open </span><i class="fas fa-external-link-alt"></i></b></a>
+	</header>
+	<iframe src="" title="" onerror="window.alert('test');" onload="document.getElementById('mod-loading').style.display = 'none';">
+	</iframe>
+</div>
+
+<div id="search" class="padding">
+	<input placeholder="Search something..." id="searchbox" class="padding">
+	<p class="padding">...on this website:
+	<div class="card invisible" onclick="validatesearch('distrowatch-distro')">
+		<b>DistroWatch<i>.org</i></b><br/>Find a distribution on DistroWatch
+	</div>
+	<div class="card invisible" onclick="validatesearch('distrowatch-article')">
+		<b>DistroWatch<i>.org</i></b><br/>Search for tips, headlines, and reviews
+	</div>
+	<div class="card invisible" onclick="validatesearch('distrotest')">
+		<b>DistroTest<i>.net</i></b><br/>Try a distribution on DistroTest
+	</div>
+	<div class="card invisible" onclick="validatesearch('fsf-directory')">
+		<b><i>directory.</i>FSF<i>.org</i></b><br/>Search for open-source projects
+	</div>
+	<div class="card invisible" onclick="validatesearch('ossdirectory')">
+		<b>OpenSourceSoftwareDirectory<i>.com</i></b><br/>Find specific programs or usage
+	</div>
+	<div class="card invisible" onclick="validatesearch('alternativeto')">
+		<b>AlternativeTo<i>.net</i></b><br/>Search alternatives for a piece of software
+	</div>
+	<div class="card invisible" onclick="validatesearch('securemessagingapps')">
+		<b><i>www.</i>SecureMessagingApps<i>.com</i></b><br/>Find articles on SecureMessagingApps
+	</div>
+	<div class="card invisible" onclick="validatesearch('duckduckgo')">
+		<b>DuckDuckGo<i>.com</i></b><br/>Privacy focused search engine
+	</div>
+</div>
+
 </body>
 
 </html>

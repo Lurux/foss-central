@@ -14,7 +14,7 @@
 	<script src="scripts.js"></script>
 </head>
 
-<body>
+<body onload="document.getElementById('javascript').remove();">
 
 <header class="padding">
 	<a href="index.html"><b><i class="fas fa-archive"></i><span class="nosmall"> FOSS Central</span></b></a>
@@ -25,17 +25,21 @@
 
 <main class="frame">
 
+	<section id="javascript" class="section card blue hover">
+		<b>Javascript notice</b><br/>This page uses javascript in order to open links in a mini browser. We're working on direct links that will allow you to manually open them in a new tab !
+	</section>
+
 	<section class="section">
 		<div class="padding title">
 			<b>Local ressources</b>
 		</div>
 		<div class="flex">
-			<a href="software.html" class="card invisible">
+			<div class="card invisible" onclick="modal('software.html', '')">
 				<b>Software alternatives</i></b><i class="right fas fa-newspaper"></i><br/>Find open-source and privacy-focused alternatives for common software.
-			</a>
-			<a href="distros.html" class="card invisible">
+			</div>
+			<div class="card invisible" onclick="modal('distros.html', '')">
 				<b>Linux distributions</i></b><i class="right fas fa-newspaper"></i><br/>A non-exhaustive list of linux distributions we would recommend.
-			</a>
+			</div>
 		</div>
 	</section>
 
@@ -106,6 +110,8 @@
 	</section>
 
 </main>
+
+
 
 <div id="modal">
 	<header class="section padding">

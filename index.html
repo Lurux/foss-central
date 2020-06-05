@@ -47,13 +47,10 @@
 			❝Saying that you don't need or want privacy because you have nothing to hide is to assume that no one should have, or could have, to hide anything - including their immigration status, unemployment history, financial history, and health records. You're assuming that no one, including yourself, might object to revealing to anyone information about their religious beliefs, political affiliations, and sexual activities, as casually as some choose to reveal their movie and music tastes and reading preferences.❞
 		</div>
 		<div class="padding">
-			<span style="font-weight: bold">Edward Snowden, in Permanent Record</span>
-		</div>
-		<div class="padding">
 			❝Ultimately, saying that you don't care about privacy because you have nothing to hide is no different from saying you don't care about freedom of speech because you have nothing to say. Or that you don't care about freedom of the press because you don't like to read. Or that you don't care about freedom of religion because you don't believe in God. Or that you don't care about the freedom to peacably assemble because you're a lazy, antisocial agoraphobe.❞
 		</div>
 		<div class="padding">
-			<span style="font-weight: bold">Edward Snowden, in Permanent Record</span>
+			<span style="font-weight: bold">- Edward Snowden, in Permanent Record</span>
 		</div>
 	</section>
 
@@ -67,6 +64,49 @@
 	</section>
 
 </main>
+
+
+
+<div id="modal">
+	<header class="section padding">
+		<p class="hover" onclick="closemodal()"><b><i class="fas fa-arrow-left"></i><span class="nosmall"> Back</span></b></p>
+		<p><span id="mod-loading"><i class="fas fa-circle-notch fa-spin"></i> </span><span id="mod-title" class="current">example</span></p>
+		<p class="hover" id="search-modal" onclick="opensearch()"><b><i class="fas fa-search"></i> <i class="fas fa-caret-down"></i></b></p>
+		<a href="" target="_blank" rel="noopener noreferrer"><b><span class="nosmall">Open </span><i class="fas fa-external-link-alt"></i></b></a>
+	</header>
+	<iframe src="" title="" onerror="window.alert('test');" onload="document.getElementById('mod-loading').style.display = 'none';">
+	</iframe>
+</div>
+
+<div id="search" class="padding">
+	<input placeholder="Search something..." id="searchbox" class="padding">
+	<p class="padding">...on this website:
+	<div class="card invisible" onclick="validatesearch('distrowatch-distro')">
+		<b>DistroWatch<i>.org</i></b><br/>Find a distribution on DistroWatch
+	</div>
+	<div class="card invisible" onclick="validatesearch('distrowatch-article')">
+		<b>DistroWatch<i>.org</i></b><br/>Search for tips, headlines, and reviews
+	</div>
+	<div class="card invisible" onclick="validatesearch('distrotest')">
+		<b>DistroTest<i>.net</i></b><br/>Try a distribution on DistroTest
+	</div>
+	<div class="card invisible" onclick="validatesearch('fsf-directory')">
+		<b><i>directory.</i>FSF<i>.org</i></b><br/>Search for open-source projects
+	</div>
+	<div class="card invisible" onclick="validatesearch('ossdirectory')">
+		<b>OpenSourceSoftwareDirectory<i>.com</i></b><br/>Find specific programs or usage
+	</div>
+	<div class="card invisible" onclick="validatesearch('alternativeto')">
+		<b>AlternativeTo<i>.net</i></b><br/>Search alternatives for a piece of software
+	</div>
+	<div class="card invisible" onclick="validatesearch('securemessagingapps')">
+		<b><i>www.</i>SecureMessagingApps<i>.com</i></b><br/>Find articles on SecureMessagingApps
+	</div>
+	<div class="card invisible" onclick="validatesearch('duckduckgo')">
+		<b>DuckDuckGo<i>.com</i></b><br/>Privacy focused search engine
+	</div>
+</div>
+
 </body>
 
 </html>
