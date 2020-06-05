@@ -8,7 +8,7 @@ Visit us at https://lurux.github.io/foss-central/ !
 
 Found a bug ? Missing ressources ? Or want to suggest software alternatives ? We're open to all suggestions ! Everyone is welcome to contribute on our github page.
 
-#Other information
+# Project information
 
 This website is distributed under the Mozilla Public License 2.0
 
