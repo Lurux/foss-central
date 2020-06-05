@@ -3,7 +3,7 @@ Portal providing ressources and information about Linux, open-source, and intern
 
 https://lurux.github.io/foss-central/
 
-Current version: Beta 1.0
+Current version: Beta 0.1
  
 # Contributions
  
