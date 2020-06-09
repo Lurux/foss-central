@@ -28,8 +28,8 @@
 
 	<section class="section software-grid">
 
-		<div class="padding hover" style="text-align: center">
-			<span onclick="showall()">All</span> <span onclick="showtype(0)">Linux</span> <span onclick="showtype(1)">Open-Source</span> <span onclick="showtype(2)">Privacy</span>
+		<div class="padding childhover" id="tabs" style="text-align: center">
+			Filter • <span onclick="showall()" class="bold">All</span> <span onclick="showtype(0)">Linux</span> <span onclick="showtype(1)">Open-Source</span> <span onclick="showtype(2)">Privacy</span> • <span onclick="showtype(3)">Help</span>
 		</div>
 
 		<a class="padding" data-fields="111">
@@ -43,21 +43,27 @@
 			<div><i class="fab fa-youtube"></i> Youtube</div>
 			<i class="fas fa-cloud"></i><i class="fas fa-times"></i><i class="fas fa-times"></i>
 		</a>
-		<a href="https://invidio.us" target="_blank" class="card invisible good" data-fields="011">
-			<div><i class="fas fa-arrow-right"></i> Invidious <i>Anonymous Youtube viewer</i></div>
-			<i class="fas fa-cloud"></i><i class="fas fa-check"></i><i class="fas fa-check"></i>
+		<a class="padding" data-fields="011">
+			<div><i class="fas fa-caret-down"></i> Anonymous Youtube viewers</div>
 		</a>
-		<a href="https://joinpeertube.org" target="_blank" class="card invisible good" data-fields="011">
-			<div><i class="fas fa-arrow-right"></i> Peertube <i>Peer-to-peer Youtube alternative</i></div>
+		<a href="https://invidio.us" target="_blank" class="card invisible good" data-fields="011">
+			<div><i class="fas fa-caret-right"></i> Invidious</div>
 			<i class="fas fa-cloud"></i><i class="fas fa-check"></i><i class="fas fa-check"></i>
 		</a>
 		<a href="https://freetubeapp.io" target="_blank" class="card invisible good" data-fields="011">
-			<div><i class="fas fa-arrow-right"></i> Freetube</div>
+			<div><i class="fas fa-caret-right"></i> Freetube</div>
 			<i class="fas fa-check"></i><i class="fas fa-check"></i><i class="fas fa-check"></i>
 		</a>
 		<a href="https://newpipe.schabi.org" target="_blank" class="card invisible good" data-fields="011">
-			<div><i class="fas fa-arrow-right"></i> Newpipe</div>
+			<div><i class="fas fa-caret-right"></i> Newpipe</div>
 			<i class="fab fa-android"></i><i class="fas fa-check"></i><i class="fas fa-check"></i>
+		</a>
+		<a class="padding" data-fields="011">
+			<div><i class="fas fa-caret-down"></i> Other alternatives</div>
+		</a>
+		<a href="https://joinpeertube.org" target="_blank" class="card invisible good" data-fields="011">
+			<div><i class="fas fa-caret-right"></i> Peertube</div>
+			<i class="fas fa-cloud"></i><i class="fas fa-check"></i><i class="fas fa-check"></i>
 		</a>
 
 		<a class="card bad" data-fields="010">
@@ -65,11 +71,11 @@
 			<i class="fas fa-cloud"></i><i class="fas fa-times"></i><i class="fas fa-question"></i>
 		</a>
 		<a href="https://gitlab.com" target="_blank" class="card invisible good" data-fields="010">
-			<div><i class="fas fa-arrow-right"></i> Gitlab</div>
+			<div><i class="fas fa-caret-right"></i> Gitlab</div>
 			<i class="fas fa-cloud"></i><i class="fas fa-check"></i><i class="fas fa-check"></i>
 		</a>
 		<a href="https://gitea.io" target="_blank" class="card invisible good" data-fields="010">
-			<div><i class="fas fa-arrow-right"></i> Gitea</div>
+			<div><i class="fas fa-caret-right"></i> Gitea</div>
 			<i class="fas fa-cloud"></i><i class="fas fa-check"></i><i class="fas fa-check"></i>
 		</a>
 
@@ -77,12 +83,22 @@
 			<div><i class="fab fa-google"></i> Gmail, <i class="fab fa-microsoft"></i> Outlook</div>
 			<i class="fas fa-cloud"></i><i class="fas fa-times"></i><i class="fas fa-times"></i>
 		</a>
+		<a class="padding" data-fields="011">
+			<div><i class="fas fa-caret-down"></i> Email clients</div>
+		</a>
 		<a href="https://www.thunderbird.net" target="_blank" class="card invisible good" data-fields="011">
-			<div><i class="fas fa-arrow-right"></i> Thunderbird <i>Open-source mail client</i></div>
+			<div><i class="fas fa-caret-right"></i> Thunderbird</div>
 			<i class="fas fa-check"></i><i class="fas fa-check"></i><i class="fas fa-check"></i>
 		</a>
+		<a href="https://k9mail.app" target="_blank" class="card invisible good" data-fields="011">
+			<div><i class="fas fa-caret-right"></i> K-9 Mail</div>
+			<i class="fab fa-android"></i><i class="fas fa-check"></i><i class="fas fa-check"></i>
+		</a>
+		<a class="padding" data-fields="011">
+			<div><i class="fas fa-caret-down"></i> Email providers</div>
+		</a>
 		<a href="https://protonmail.com/" target="_blank" class="card invisible good" data-fields="011">
-			<div><i class="fas fa-arrow-right"></i> Protonmail <i>Privacy-conscious mail provider</i></div>
+			<div><i class="fas fa-caret-right"></i> Protonmail</div>
 			<i class="fas fa-cloud"></i><i class="fas fa-check"></i><i class="fas fa-check"></i>
 		</a>
 
@@ -91,16 +107,20 @@
 			<i class="fas fa-minus-circle"></i><i class="fas fa-times"></i><i class="fas fa-times"></i>
 		</a>
 		<a href="https://www.libreoffice.org" target="_blank" class="card invisible good" data-fields="111">
-			<div><i class="fas fa-arrow-right"></i> Libre Office</div>
+			<div><i class="fas fa-caret-right"></i> Libre Office</div>
 			<i class="fas fa-check"></i><i class="fas fa-check"></i><i class="fas fa-check"></i>
 		</a>
 		<a href="https://www.openoffice.org" target="_blank" class="card invisible good" data-fields="111">
-			<div><i class="fas fa-arrow-right"></i> Open Office</div>
+			<div><i class="fas fa-caret-right"></i> Open Office</div>
 			<i class="fas fa-check"></i><i class="fas fa-check"></i><i class="fas fa-check"></i>
 		</a>
 		<a href="https://www.onlyoffice.com" target="_blank" class="card invisible good" data-fields="111">
-			<div><i class="fas fa-arrow-right"></i> Only Office <i>Most modern option</i></div>
+			<div><i class="fas fa-caret-right"></i> Only Office</div>
 			<i class="fas fa-check"></i><i class="fas fa-check"></i><i class="fas fa-check"></i>
+		</a>
+		<a href="https://www.softmaker.com" target="_blank" class="card invisible good" data-fields="100">
+			<div><i class="fas fa-caret-right"></i> Softmaker Office</div>
+			<i class="fas fa-check"></i><i class="fas fa-times"></i><i class="fas fa-question"></i>
 		</a>
 
 		<a class="card bad" data-fields="011">
@@ -108,7 +128,7 @@
 			<i class="fas fa-cloud"></i><i class="fas fa-times"></i><i class="fas fa-times"></i>
 		</a>
 		<a href="https://nextcloud.com" target="_blank" class="card invisible good" data-fields="011">
-			<div><i class="fas fa-arrow-right"></i> Nextcloud</div>
+			<div><i class="fas fa-caret-right"></i> Nextcloud</div>
 			<i class="fas fa-check"></i><i class="fas fa-check"></i><i class="fas fa-check"></i>
 		</a>
 
@@ -117,11 +137,11 @@
 			<i class="fas fa-cloud"></i><i class="fas fa-times"></i><i class="fas fa-times"></i>
 		</a>
 		<a href="https://www.signal.org" target="_blank" class="card invisible good" data-fields="011">
-			<div><i class="fas fa-arrow-right"></i> Signal</div>
+			<div><i class="fas fa-caret-right"></i> Signal</div>
 			<i class="fas fa-check"></i><i class="fas fa-check"></i><i class="fas fa-check"></i>
 		</a>
 		<a href="https://silence.im" target="_blank" class="card invisible good" data-fields="011">
-			<div><i class="fas fa-arrow-right"></i> Silence</div>
+			<div><i class="fas fa-caret-right"></i> Silence</div>
 			<i class="fab fa-android"></i><i class="fas fa-check"></i><i class="fas fa-check"></i>
 		</a>
 
@@ -130,15 +150,15 @@
 			<i class="fas fa-cloud"></i><i class="fas fa-times"></i><i class="fas fa-times"></i>
 		</a>
 		<a href="https://mastodon.social" target="_blank" class="card invisible good" data-fields="011">
-			<div><i class="fas fa-arrow-right"></i> Mastodon</div>
+			<div><i class="fas fa-caret-right"></i> Mastodon</div>
 			<i class="fas fa-cloud"></i><i class="fas fa-check"></i><i class="fas fa-check"></i>
 		</a>
 		<a href="https://www.gab.com" target="_blank" class="card invisible good" data-fields="011">
-			<div><i class="fas fa-arrow-right"></i> Gab</div>
+			<div><i class="fas fa-caret-right"></i> Gab</div>
 			<i class="fas fa-cloud"></i><i class="fas fa-check"></i><i class="fas fa-check"></i>
 		</a>
 		<a href="https://diasporafoundation.org" target="_blank" class="card invisible good" data-fields="011">
-			<div><i class="fas fa-arrow-right"></i> Diaspora</div>
+			<div><i class="fas fa-caret-right"></i> Diaspora</div>
 			<i class="fas fa-cloud"></i><i class="fas fa-check"></i><i class="fas fa-check"></i>
 		</a>
 
@@ -147,15 +167,15 @@
 			<i class="fas fa-cloud"></i><i class="fas fa-times"></i><i class="fas fa-times"></i>
 		</a>
 		<a href="https://duckduckgo.com" target="_blank" class="card invisible good" data-fields="001">
-			<div><i class="fas fa-arrow-right"></i> Duckduckgo</div>
+			<div><i class="fas fa-caret-right"></i> Duckduckgo</div>
 			<i class="fas fa-cloud"></i><i class="fas fa-minus-circle"></i><i class="fas fa-check"></i>
 		</a>
 		<a href="https://www.qwant.com" target="_blank" class="card invisible good" data-fields="001">
-			<div><i class="fas fa-arrow-right"></i> Qwant</div>
+			<div><i class="fas fa-caret-right"></i> Qwant</div>
 			<i class="fas fa-cloud"></i><i class="fas fa-minus-circle"></i><i class="fas fa-check"></i>
 		</a>
 		<a href="https://www.startpage.com" target="_blank" class="card invisible good" data-fields="001">
-			<div><i class="fas fa-arrow-right"></i> Startpage</div>
+			<div><i class="fas fa-caret-right"></i> Startpage</div>
 			<i class="fas fa-cloud"></i><i class="fas fa-times"></i><i class="fas fa-check"></i>
 		</a>
 
@@ -164,15 +184,15 @@
 			<i class="fas fa-minus-circle"></i><i class="fas fa-times"></i><i class="fas fa-times"></i>
 		</a>
 		<a href="https://www.mozilla.org/firefox/new" target="_blank" class="card invisible good" data-fields="111">
-			<div><i class="fas fa-arrow-right"></i> Firefox</div>
+			<div><i class="fas fa-caret-right"></i> Firefox</div>
 			<i class="fas fa-check"></i><i class="fas fa-check"></i><i class="fas fa-check"></i>
 		</a>
 		<a href="https://www.chromium.org" target="_blank" class="card invisible good" data-fields="110">
-			<div><i class="fas fa-arrow-right"></i> Chromium</div>
+			<div><i class="fas fa-caret-right"></i> Chromium</div>
 			<i class="fas fa-check"></i><i class="fas fa-check"></i><i class="fas fa-question"></i>
 		</a>
 		<a href="https://www.torproject.org" target="_blank" class="card invisible good" data-fields="111">
-			<div><i class="fas fa-arrow-right"></i> Tor</div>
+			<div><i class="fas fa-caret-right"></i> Tor</div>
 			<i class="fas fa-check"></i><i class="fas fa-check"></i><i class="fas fa-check"></i>
 		</a>
 
@@ -181,11 +201,29 @@
 			<i class="fas fa-times"></i><i class="fas fa-times"></i><i class="fas fa-question"></i>
 		</a>
 		<a href="https://www.gimp.org" target="_blank" class="card invisible good" data-fields="110">
-			<div><i class="fas fa-arrow-right"></i> GIMP</div>
+			<div><i class="fas fa-caret-right"></i> GIMP</div>
 			<i class="fas fa-check"></i><i class="fas fa-check"></i><i class="fas fa-check"></i>
 		</a>
 		<a href="https://krita.org" target="_blank" class="card invisible good" data-fields="110">
-			<div><i class="fas fa-arrow-right"></i> Krita</div>
+			<div><i class="fas fa-caret-right"></i> Krita</div>
+			<i class="fas fa-check"></i><i class="fas fa-check"></i><i class="fas fa-check"></i>
+		</a>
+
+		<a class="card bad" data-fields="110">
+			<div><i class="fab fa-adobe"></i> Premiere</div>
+			<i class="fas fa-times"></i><i class="fas fa-times"></i><i class="fas fa-question"></i>
+		</a>
+		<a href="https://kdenlive.org" target="_blank" class="card invisible good" data-fields="110">
+			<div><i class="fas fa-caret-right"></i> Kdenlive</div>
+			<i class="fas fa-check"></i><i class="fas fa-check"></i><i class="fas fa-check"></i>
+		</a>
+
+		<a class="card bad" data-fields="010">
+			<div><i class="fas fa-archive"></i> Autodesk Maya</div>
+			<i class="fas fa-check"></i><i class="fas fa-times"></i><i class="fas fa-question"></i>
+		</a>
+		<a href="https://www.blender.org" target="_blank" class="card invisible good" data-fields="010">
+			<div><i class="fas fa-caret-right"></i> Blender</div>
 			<i class="fas fa-check"></i><i class="fas fa-check"></i><i class="fas fa-check"></i>
 		</a>
 
@@ -194,16 +232,19 @@
 			<i class="fas fa-minus-circle"></i><i class="fas fa-times"></i><i class="fas fa-times"></i>
 		</a>
 		<a href="distros.html" class="card invisible good" data-fields="011">
-			<div><i class="fas fa-arrow-right"></i> Linux</div>
+			<div><i class="fas fa-caret-right"></i> Linux</div>
 			<i class="fas fa-minus-circle"></i><i class="fas fa-check"></i><i class="fas fa-check"></i>
 		</a>
 		<a href="https://duckduckgo.com/?q=bsd+os" target="_blank" class="card invisible good" data-fields="011">
-			<div><i class="fas fa-arrow-right"></i> BSD</div>
+			<div><i class="fas fa-caret-right"></i> BSD</div>
 			<i class="fas fa-minus-circle"></i><i class="fas fa-check"></i><i class="fas fa-check"></i>
 		</a>
 
-		<div class="padding" style="text-align: center">
-			<b>Legend:</b> <i class="fas fa-check"></i> Yes <i class="fas fa-times"></i> No <i class="fas fa-minus-circle"></i> Mixed <i class="fas fa-question"></i> Unknown <i class="fas fa-cloud"></i> Web <i class="fab fa-android"></i> Android
+		<div class="card padding" style="text-align: center; line-height: 2;">
+			<b>Help:</b><br/>
+			<i class="fab fa-linux"></i> Runs on linux ? <i class="fas fa-lock-open"></i> Is open-source ? <i class="fas fa-shield-alt"></i> Respects privacy ?<br/>
+			<i class="fas fa-check"></i> Yes <i class="fas fa-times"></i> No <i class="fas fa-question"></i> Unknown <i class="fas fa-minus-circle"></i> Mixed<br/>
+			<i class="fas fa-cloud"></i> Website <i class="fab fa-android"></i> Android app
 		</div>
 
 	</section>
