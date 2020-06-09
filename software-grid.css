@@ -2,12 +2,12 @@
 	font-size: larger;
 	width: 30px;
 	text-align: center;
+	flex-shrink: 0;
 }
 
 .software-grid > a {
 	display: flex;
 }
-
 .software-grid > a > div {
 	flex-grow: 1;
 }
@@ -15,11 +15,46 @@
 .software-grid > .bad > i.fa-times {
 	color: red;
 }
-
 .software-grid > .good > i.fa-check {
 	color: green;
 }
 
 .software-grid .bad {
 	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.software-grid .good {
+	padding-left: 40px;
+}
+.software-grid .padding {
+	margin-top: 10px;
+}
+
+.software-grid .bad, .software-grid .good {
+	position: relative;
+}
+.software-grid .bad::before, .software-grid .good::before {
+	opacity: 0;
+	position: absolute;
+	bottom: 36px;
+	left: 10px;
+	background-color: grey;
+	color: white;
+	padding: 0 4px;
+	border-radius: 4px;
+	box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.5);
+	transition: 0.3s ease;
+}
+.software-grid .bad:hover::before, .software-grid .good:hover::before {
+	opacity: 1;
+}
+
+.software-grid .bad::before {
+	content: "Avoid using...";
+}
+.software-grid .good::before {
+	content: "Replace with...";
+}
+.software-grid .good:hover::before {
+	transition: 0.3s 0.3s ease;
 }

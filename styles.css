@@ -14,7 +14,7 @@
 }
 
 .title {
-	margin: 20px 0;
+	margin: 16px 0;
 	opacity: 0.5;
 }
 
@@ -47,7 +47,7 @@ header, .card:not(.invisible), .card.invisible:hover, footer, #search {
 #search {
 	position: fixed;
 	top: 45px;
-	right: 10vw;
+	right: max(0px, 25vw - 150px); /* ~ 33vw - (300px + 15vw) / 2 */
 	width: calc(300px + 15vw);
 	display: none;
 	background-color: white;
@@ -140,7 +140,7 @@ i.fas, i.fab, .nosmall {
 	background-color: #f9f9f9;
 }
 
-.hover, a, .invisible {
+.hover, a, .invisible, .childhover > * {
 	transition: 0.3s ease;
 	cursor: pointer;
 
@@ -180,11 +180,17 @@ i.fas, i.fab, .nosmall {
 	display: block;
 }
 
-@media (max-width: 600px) {
+.bold {
+	font-weight: bold;
+}
+
+@media (max-width: 800px) {
 	.nosmall { display: none; }
+}
+
+@media (max-width: 515px) {
 	.frame { width: 100%; }
 	.card { border-radius: 0 !important; }
 	#search { width: 100%; right: 0; }
-	.flex { grid-template-columns: 1fr; }
 	.column { grid-template-columns: 1fr; }
 }
