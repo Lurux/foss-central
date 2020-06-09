@@ -12,4 +12,4 @@ Found a bug ? Missing ressources ? Or want to suggest software alternatives ? We
 
 This website is distributed under the Mozilla Public License 2.0
 
-Current version: Beta 0.1
+Current version: Beta 0.2
