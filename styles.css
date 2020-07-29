@@ -21,6 +21,10 @@
 .section {
 	margin: 20px 0;
 }
+.section.separator {
+	border-top: 1px solid gray;
+	padding-top: 20px;
+}
 
 #modal {
 	position: fixed;
@@ -39,26 +43,26 @@
 	background-color: white;
 }
 
-header, .card:not(.invisible), .card.invisible:hover, footer, #search {
+.card:not(.invisible), .card.invisible:hover, footer, #search {
 	border-radius: 6px;
 	box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.5);
 }
 
 #search {
 	position: fixed;
-	top: 45px;
-	right: max(0px, 25vw - 150px); /* ~ 33vw - (300px + 15vw) / 2 */
-	width: calc(300px + 15vw);
+	width: 60%;
+	top: 65px;
+	left:20%;
 	display: none;
 	background-color: white;
-	border-radius: 0 0 6px 6px;
+	border-radius: 6px;
 
-	max-height: calc(100vh - 50px);
+	max-height: calc(100vh - 85px);
 	overflow: auto;
 }
 
 input {
-	width: 100%;
+	width: calc(100% - 40px);
 	box-shadow: none;
 	border: 1px solid grey;
 	border-radius: 6px;
@@ -99,17 +103,23 @@ img.left {
 	margin-right: 8px;
 }
 
-header, header a {
-	color: #ffffff;
-	background-color: #0033cc;
-}
-
 header {
-	border-radius: 0px;
-	margin-bottom: 20px;
-
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+header:not(.invisible) {
+	box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.5);
+	background-color: #0033cc;
+	color: #ffffff;
+}
+header.invisible > div > a:last-child {
+	display: none;
+}
+
+header * {
+	color: inherit;
 }
 
 b {
@@ -154,6 +164,10 @@ i.fas, i.fab, .nosmall {
 }
 .hover:active, .invisible:active {
 	filter: brightness(92%);
+}
+
+a.hover {
+	color: dodgerblue;
 }
 
 .tag {

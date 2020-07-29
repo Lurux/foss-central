@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Articles - FOSS Central</title>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+	<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body onload="if(window.frameElement) { document.getElementById('header').classList.add('invisible'); }">
+
+<header id="header" class="padding">
+	<div class="frame">
+		<a href="../articles.html"><b><i class="fas fa-arrow-left"></i> Articles</b></a>
+		<a href="index.html" style="float: right"><b><span class="nosmall">FOSS Central </span><i class="fas fa-archive"></i></b></a>
+	</div>
+</header>
+
+<main class="frame">
+
+	<section class="section">
+		<div class="padding">
+			<b>Windows</b>
+		</div>
+		<div class="padding">
+			This article will help you tame Window's privacy settings in order to mitigate what data gets sent to Microsoft. We will cover basic to advanced steps, some of which may disable features you might want to use. Finding the right balance is up to you !
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="padding title">
+			<b>Contents</b>
+		</div>
+		<ol>
+			<li class="padding">
+				Tweak Windows 10 settings
+			</li>
+			<li class="padding">
+				Use O&O ShutUp10
+			</li>
+			<li class="padding">
+				Detach your Microsoft account
+			</li>
+		</ol>
+	</section>
+
+	<section class="section">
+		<div class="padding title">
+			<b>Tweak Windows 10 settings</b>
+		</div>
+		<div class="padding">
+			<b>Privacy settings</b>
+		</div>
+		<div class="padding">
+			First, go take a look at the privacy section of your system settings. By default, Windows 10 associates an advertising ID to your user account to serve tailored ads. Location tracking is also used to serve tailored content.
+		</div>
+		<div class="padding">
+			This section allows you to disable this as well as a few other settings, and control which files and data your apps can access. You can safely turn off pretty much everything here. These are the most important settings you may want to turn off:
+		</div>
+		<ul>
+			<li class="padding">
+				In the general tab, disable the advertising ID, app lauch tracking, and suggested content if you don't like that.
+			</li>
+			<li class="padding">
+				Switch to basic data in the diagnostics tab, and turn off "improve inking and typing" and "personalized experience".
+			</li>
+			<li class="padding">
+				Disable the activity timeline if you don't use it.
+			</li>
+			<li class="padding">
+				Finally, check app permissions for settings you may want to disable. Do note these settings only apply to the applications coming from the Microsoft store.
+			</li>
+		</ul>
+		<div class="padding" style="margin-bottom: 16px;">
+			<a class="hover" href="https://www.bleepingcomputer.com/news/microsoft/windows-10-privacy-guide-settings-everyone-should-use/" target="_blank" rel="noopener noreferrer">Learn more</a> about Windows privacy settings.
+		</div>
+
+		<div class="padding">
+			<b>Search settings</b>
+		</div>
+		<div class="padding">
+			In the search section of Windows settings, disable cloud search and history if you're not interested in those. Also sign out of Cortana if you're using a Microsoft account or disable it if possible.
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="padding title">
+			<b>Use O&O ShutUp10</b>
+		</div>
+		<div class="padding">
+			ShutUp10 is a tool that lets you toggle a boatload of privacy Windows settings normally not available to home users by using the registery. It is a simple portable app that can be downloaded and run immediately. You can automatically toggle recommended settings using the "action" menu, but I'd recommend going through the options manually. This will take a bit of time but is really worth the effort.
+		</div>
+		<div class="padding" style="margin-bottom: 16px;">
+			<a class="hover" href="https://www.oo-software.com/en/shutup10" target="_blank" rel="noopener noreferrer">Download O&O ShutUp10</a>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="padding title">
+			<b>Detach your Microsoft account</b>
+		</div>
+		<div class="padding">
+			When you install Windows, you're forced to create a Microsoft account by default. With this account account, Microsoft will collect information such as your contacts, credentials, settings, history, location and typing data, and a bunch more. If you're not interested in online Microsoft services and don't use OneDrive, you can safely detach your Microsoft account from your system by doing the following:
+		</div>
+		<ol>
+			<li class="padding">
+				Go to your account settings
+			</li>
+			<li class="padding">
+				Under your account information, click on "use a local account instead"
+			</li>
+			<li class="padding">
+				Create a new password for your local account
+			</li>
+			<li class="padding">
+				Log out to finish
+			</li>
+		</ol>
+		<div class="padding" style="margin-bottom: 16px;">
+			It is worth noting that recent Windows versions might bug you before the last step because of disk encryption. Basically, Windows now encrypts your disk by default to protect its content, even if it could cause data loss if you lose you Microsoft password. If prompted, simply add a pin in order to keep your disk encrypted, or disable disk encryption in the security settings.
+		</div>
+		<div class="padding">
+			If you don't want to detach your Microsoft account, at least take a look at Microsoft's <a class="hover" href="https://account.microsoft.com/privacy/" target="_blank" rel="noopener noreferrer">privacy dashboard</a> in order to control your data !
+		</div>
+	</section>
+
+	<section class="section padding">
+		Did we miss something ? Don't hesitate to fill a <a href="https://github.com/Lurux/foss-central" target="_blank">Github</a> issue if you have suggestions !
+	</section>
+
+</main>
+</body>
+
+</html>
+

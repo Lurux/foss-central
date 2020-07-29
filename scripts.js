@@ -1,5 +1,5 @@
 iframe_blacklist = ["directory.fsf.org", "www.privacytools.io", "alternativeto.net", "duckduckgo.com"];
-search_adress = {"distrowatch-distro": "distrowatch.com/table.php?distribution=", "distrowatch-article": "distrowatch.org/dwres.php?resource=article-search&questions=on&tips=on&reviews=on&headlines=on&lookfor=", distrotest: "distrotest.net/", "fsf-directory": "directory.fsf.org/wiki?search=", ossdirectory: "opensourcesoftwaredirectory.com/search/", alternativeto: "alternativeto.net/browse/search?q=", securemessagingapps: "www.securemessagingapps.com/?s=", duckduckgo: "duckduckgo.com/?q="}
+search_adress = {"DistroWatch": "distrowatch.com/table.php?distribution=", "DistroWatch Articles": "distrowatch.org/dwres.php?resource=article-search&questions=on&tips=on&reviews=on&headlines=on&misc=on&lookfor=", "DistroTest": "distrotest.net/", "FSF Directory": "directory.fsf.org/wiki?search=", "OpenSourceSoftwareDirectory": "opensourcesoftwaredirectory.com/search/", "AlternativeTo": "alternativeto.net/browse/search?q=", "SecureMessagingApps": "www.securemessagingapps.com/?s=", "DuckDuckGo": "duckduckgo.com/?q="}
 
 window.onload = function() {
 	if(window.self !== window.top) {
@@ -7,26 +7,30 @@ window.onload = function() {
 	}
 }
 
-function modal(adress, prefix = "https://") {
-	domain = adress.split('/')[0];
+function modal(link, title) {
+	return openmodal(link.href, title);
+}
+
+function openmodal(address, title) {
 	closesearch();
 
-	if(iframe_blacklist.includes(domain)) {
-		window.alert("You will be redirected because this website can't be shown in an iframe.");
-		window.open(prefix + adress, '_blank');
+	if(iframe_blacklist.includes(address.split('/')[2])) {
+		return window.confirm(title + " cannot be shown in the mini-browser, so you will be redirected.");
 	} else {
 		elm = document.getElementById("modal");
 		elm.style.display = "block";
 
-		elm.getElementsByClassName('current')[0].innerHTML = domain;
+		elm.getElementsByClassName('current')[0].innerHTML = title;
 
-		elm.getElementsByTagName('iframe')[0].title = adress;
-		elm.getElementsByTagName('iframe')[0].src = prefix + adress;
+		elm.getElementsByTagName('iframe')[0].title = title;
+		elm.getElementsByTagName('iframe')[0].src = address;
 
-		elm.getElementsByTagName('a')[0].href = prefix + adress;
+		elm.getElementsByTagName('a')[0].href = address;
 
 		document.getElementById("mod-loading").style.display = 'inline';
 		document.body.style.overflow = "hidden";
+
+		return false;
 	}
 }
 
@@ -39,33 +43,17 @@ function closemodal() {
 	document.body.style.overflow = "";
 }
 
+
+
 function opensearch() {
-	elm = document.getElementById("search-main");
-	elm.children[1].className = "fas fa-caret-up";
-	elm.onclick = closesearch;
-
-	elm = document.getElementById("search-modal"); // dirty
-	elm.children[0].children[1].className = "fas fa-caret-up";
-	elm.onclick = closesearch;
-
 	document.getElementById("search").style.display = "block";
 	document.getElementById("searchbox").select();
 }
 
-function validatesearch(site) {
-	modal(search_adress[site] + document.getElementById("searchbox").value);
+function dosearch(site) {
+	openmodal('https://' + search_adress[site] + document.getElementById("searchbox").value, site);
 }
 
 function closesearch() {
-	elm = document.getElementById("search-main");
-	elm.children[1].className = "fas fa-caret-down";
-	elm.onclick = opensearch;
-
-	elm = document.getElementById("search-modal");
-	elm.children[0].children[1].className = "fas fa-caret-down";
-	elm.onclick = opensearch;
-
 	document.getElementById("search").style.display = "none";
 }
-
-// elm.setAttribute("onclick", "closesearch(arg)");
