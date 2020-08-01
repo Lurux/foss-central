@@ -12,7 +12,6 @@ Visit us at https://lurux.github.io/foss-central/ !
 - Complete the about page
 - Use magic links in ressources page (works without javascript)
 - Add separators in ressources page
-- Put legend first in software page
 - Add privacy guides
 
 ### Future:
