@@ -9,10 +9,14 @@
 ### Beta 0.4
 
 - Rebuild software page
-- Improve filter bubbles ✓
+- Improve filter bubbles
 - Enlarge toolbar buttons (for phone use)
 - Add filter in resource page
 - Privacy dashboards
+
+### Repo
+
+- Add developpement branch for new changes
 
 ### Future
 
