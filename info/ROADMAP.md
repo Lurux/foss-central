@@ -14,10 +14,6 @@
 - Add filter in resource page
 - Privacy dashboards
 
-### Repo
-
-- Add developpement branch for new changes
-
 ### Future
 
 - Improve distros page
