@@ -10,16 +10,19 @@ Visit us at https://lurux.github.io/foss-central/ !
 
 - Complete the welcome page
 - Complete the about page
-- Use magic links in ressources page (works without javascript)
-- Add separators in ressources page
+- Use magic links in resources page (works without javascript)
+- Add separators in resources page
 - Add privacy guides
 
-### Future:
+### Beta 0.4
 
-- Improve software page
-- Android ROMs
-- Linux hardware
-- Privacy dashboard
+- Rebuild software page
+- Improve filter bubbles
+- Enlarge toolbar buttons (for phone use)
+- Add filter in resource page
+- Privacy dashboards
+
+[See more](/info/ROADMAP.md)
 
 # Contribute
 
