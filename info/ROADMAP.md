@@ -5,8 +5,8 @@
 - Complete the welcome page
 - Complete the about page
 - Use magic links in resources page (works without javascript)
-- Add separators in resources page
-- Add privacy guides                                 a     
+- Add separators in resources page\
+- Add privacy guides/
 
 - 2 improved pages, 2 enhancements, 1 new resource
 - 29 July 2020
@@ -19,7 +19,7 @@
 - Improve mini browser ✓
 - Rename article page ✓
 - Privacy dashboards
-  
+
 - 1 improved page, 4 enhancements, 1 new resource
 
 ### Future
@@ -31,13 +31,13 @@
 - MoRe IcOnS
 - Android ROMs
 - Linux Hardware
-  
+
 - 1 improved page, 4 enhancements, 2 new resources
 
 ### Release 1.0
 
 - Rebuild stylesheet
 - Make sure all links are secured
-  
+
 - 1 enhancement
 
