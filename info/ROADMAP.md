@@ -11,6 +11,9 @@
 - 2 improved pages, 2 enhancements, 1 new resource
 - 29 July 2020
 
+- 2 improved pages, 2 enhancements, 1 new resource
+- 29 July 2020
+
 ### Beta 0.4
 
 - Rebuild software page
