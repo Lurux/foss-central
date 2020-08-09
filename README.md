@@ -17,9 +17,10 @@ Visit us at https://lurux.github.io/foss-central/ !
 ### Beta 0.4
 
 - Rebuild software page
-- Improve filter bubbles
-- Enlarge toolbar buttons (for phone use)
-- Add filter in resource page
+- Improve filter bubbles ✓
+- Enlarge toolbar buttons (for phone use) ✓
+- Improve mini browser ✓
+- Rename article page ✓
 - Privacy dashboards
 
 [See more](/info/ROADMAP.md)
