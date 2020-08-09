@@ -5,9 +5,9 @@
 - Complete the welcome page
 - Complete the about page
 - Use magic links in resources page (works without javascript)
-- Add separators in resources page\
-- Add privacy guides/
-
+- Add separators in resources page
+- Add privacy guides
+-
 - 2 improved pages, 2 enhancements, 1 new resource
 - 29 July 2020
 
