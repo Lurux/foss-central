@@ -16,24 +16,26 @@
 
 <body onload="if(window.frameElement) { document.getElementById('header').remove(); }">
 
-<header id="header" class="padding">
-	<div class="frame">
+<header id="header">
+	<div class="frame header">
 		<a href="ressources.html"><b><i class="fas fa-arrow-left"></i> Ressources</b></a>
-		<a href="index.html" style="float: right"><b><span class="nosmall">FOSS Central </span><i class="fas fa-archive"></i></b></a>
+		<a href="index.html"><b><span class="nosmall">FOSS Central </span><i class="fas fa-archive"></i></b></a>
 	</div>
 </header>
 
 <main class="frame">
 
+	<section class="section">
+	<div class="padding" style="text-align: center">
+		<b>Linux Distributions</b>
+	</div>
+
+		<div class="card buttonbar" id="tabs">
+			<i class="fas fa-filter"></i><span onclick="showall()" class="bold">All</span><span onclick="showtype(0)">Simple</span><span onclick="showtype(1)">Light</span><span onclick="showtype(2)">Stable</span><span onclick="showtype(3)">Secure</span>
+		</div>
+	</secion>
+
 	<section class="section software-grid column">
-
-		<div class="padding" style="text-align: center">
-			<b>Linux Distributions</b>
-		</div>
-
-		<div class="padding childhover" id="tabs" style="text-align: center">
-			Filter: <span onclick="showall()" class="bold">All</span> <span onclick="showtype(0)">Simple</span> <span onclick="showtype(1)">Light</span> <span onclick="showtype(2)">Stable</span> <span onclick="showtype(3)">Secure</span>
-		</div>
 
 		<a href="https://linuxmint.com" target="_blank" class="card invisible" data-fields="1010">
 			<b>Linux Mint</b><br>"From freedom came elegance." A simple, modern and elegant system for everyday use.<br/>Linux Mint is ideal for Linux beginners, especially those who come from Windows.<br/><span class="tag">+ Simple</span><span class="tag">+ Stable</span>
