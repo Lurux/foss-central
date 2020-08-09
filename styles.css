@@ -26,6 +26,31 @@
 	padding-top: 20px;
 }
 
+.buttonbar {
+	padding: 0 !important;
+	margin: 0 auto;
+	width: max-content;
+	display: flex;
+	overflow: hidden;
+}
+.buttonbar > * {
+	padding: 8px;
+}
+.buttonbar > i:first-child {
+	line-height: 18px;
+}
+.buttonbar > span {
+	cursor: pointer;
+
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.buttonbar > span:hover {
+	background-color: #f9f9f9;
+}
+
 #modal {
 	position: fixed;
 	top: 0;
@@ -70,15 +95,15 @@ input {
 
 .current {
 	position: relative;
+	padding: 10px;
 	font-weight: bold;
-	height: 19px; /* dirty too */
 }
 .current::after {
 	content: "";
 	border: 10px solid transparent;
 	border-bottom-color: white;
 	position: absolute;
-	bottom: -16px;
+	bottom: 0;
 	left: calc(50% - 8px);
 }
 
@@ -103,10 +128,12 @@ img.left {
 	margin-right: 8px;
 }
 
-header {
+header, .header {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 20px;
+}
+header * {
+	color: inherit;
 }
 
 header:not(.invisible) {
@@ -118,8 +145,13 @@ header.invisible > div > a:last-child {
 	display: none;
 }
 
-header * {
-	color: inherit;
+header a, header .hbutton {
+	padding: 10px;
+	cursor: pointer;
+}
+header a:hover, header .hbutton:hover {
+	background-color: #0033cc;
+	filter: brightness(120%);
 }
 
 b {
@@ -154,10 +186,10 @@ i.fas, i.fab, .nosmall {
 	transition: 0.3s ease;
 	cursor: pointer;
 
-   -moz-user-select: none;
-   -webkit-user-select: none;
-   -ms-user-select: none;
-   user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 .hover:hover {
 	filter: brightness(96%);
@@ -189,9 +221,6 @@ a.hover {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 16px;
-}
-.column > * {
-	display: block;
 }
 
 .bold {

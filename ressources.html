@@ -16,9 +16,9 @@
 
 <body>
 
-<header class="padding">
+<header>
 	<a href="index.html"><b><i class="fas fa-archive"></i><span class="nosmall"> FOSS Central</span></b></a>
-	<p><a href="index.html">Home</a> <a href="project.html">Project</a> <a href="ressources.html" class="current">Ressources</a></p>
+	<div style="display: flex;"><a href="index.html">Home</a><a href="ressources.html" class="current">Ressources</a><a href="about.html">About</a></div>
 	<a href="https://github.com/Lurux/foss-central" target="_blank"><b><span class="nosmall">Github </span><i class="fab fa-github"></i></b></a>
 </header>
 
@@ -40,7 +40,7 @@
 				<b>Software alternatives</i></b><i class="right fas fa-archive"></i><br/>Find open-source and privacy-focused alternatives for common software.
 			</a>
 			<a href="articles.html" target="_blank" rel="noopener noreferrer" class="card invisible" onclick="return modal(this, 'Articles')">
-				<b>Privacy guides</i></b><i class="right fas fa-archive"></i><br/>Mitigate privacy invasion of various commonly used platforms.
+				<b>Articles</i></b><i class="right fas fa-archive"></i><br/>Guides and articles about open-source software and privacy.
 			</a>
 			<a href="distros.html" target="_blank" rel="noopener noreferrer" class="card invisible" onclick="return modal(this, 'Distributions')">
 				<b>Linux distributions</i></b><i class="right fas fa-archive"></i><br/>A non-exhaustive list of linux distributions we would recommend.
@@ -120,36 +120,17 @@
 		</div>
 	</section>
 
-	<section class="section separator">
-		<div class="padding">
-			<b>Additionnal information</b>
-		</div>
-		<div class="padding">
-			These other sources will allow you to learn more about open-source software and privacy.
-		</div>
-
-		<div class="padding title">
-			<b>Articles & posts</b>
-		</div>
-		<div class="flex">
-			<a href="https://whyprivacymatters.org" target="_blank" rel="noopener noreferrer" class="card invisible" onclick="return modal(this, 'WhyPrivacyMatters')">
-				<b>WhyPrivacyMatters<i>.org</i></b><i class="right fas fa-newspaper"></i><br/>Explanation of the importance of digital privacy in the modern world.
-			</a>
-		</div>
-	</section>
-
 </main>
 
 
 
 <div id="modal">
-	<header class="section padding">
-		<p class="hover" onclick="closemodal()"><b><i class="fas fa-arrow-left"></i><span class="nosmall"> Back</span></b></p>
-		<p><span id="mod-loading"><i class="fas fa-circle-notch fa-spin"></i> </span><span id="mod-title" class="current">example</span></p>
-		<p class="hover" id="search-modal" onclick="opensearch()"><b><i class="fas fa-search"></i></b></p>
+	<header>
+		<div class="hbutton" onclick="closemodal()"><b><i class="fas fa-arrow-left"></i><span class="nosmall"> Back</span></b></div>
+		<div style="display: flex;"><span class="hbutton" onclick="opensearch()"><i id="search-modal" class="fas fa-search"></i></span><span class="current" id="mod-title">Title...</span></div>
 		<a href="" target="_blank" rel="noopener noreferrer"><b><span class="nosmall">Open </span><i class="fas fa-external-link-alt"></i></b></a>
 	</header>
-	<iframe src="" title="" onerror="window.alert('test');" onload="document.getElementById('mod-loading').style.display = 'none';">
+	<iframe src="" title="" onload="document.getElementById('search-modal').classList = 'fas fa-search';">
 	</iframe>
 </div>
 

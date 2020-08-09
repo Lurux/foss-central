@@ -20,14 +20,14 @@ function openmodal(address, title) {
 		elm = document.getElementById("modal");
 		elm.style.display = "block";
 
-		elm.getElementsByClassName('current')[0].innerHTML = title;
+		document.getElementById('mod-title').innerHTML = title;
 
 		elm.getElementsByTagName('iframe')[0].title = title;
 		elm.getElementsByTagName('iframe')[0].src = address;
 
 		elm.getElementsByTagName('a')[0].href = address;
 
-		document.getElementById("mod-loading").style.display = 'inline';
+		document.getElementById("search-modal").classList = 'fas fa-circle-notch fa-spin';
 		document.body.style.overflow = "hidden";
 
 		return false;
@@ -57,3 +57,15 @@ function dosearch(site) {
 function closesearch() {
 	document.getElementById("search").style.display = "none";
 }
+
+
+var x = 0;
+
+
+
+document.addEventListener('readystatechange', (event) => {
+	console.log('test' + x);
+	x++;
+});
+
+

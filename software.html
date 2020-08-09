@@ -17,26 +17,22 @@
 
 <body onload="if(window.frameElement) { document.getElementById('header').remove(); }">
 
-<header id="header" class="padding">
-	<div class="frame">
+<header id="header">
+	<div class="frame header">
 		<a href="ressources.html"><b><i class="fas fa-arrow-left"></i> Ressources</b></a>
-		<a href="index.html" style="float: right"><b><span class="nosmall">FOSS Central </span><i class="fas fa-archive"></i></b></a>
+		<a href="index.html"><b><span class="nosmall">FOSS Central </span><i class="fas fa-archive"></i></b></a>
 	</div>
 </header>
 
 <main class="frame">
 
+	<section class="section">
+		<div class="card buttonbar" id="tabs">
+			<i class="fas fa-filter"></i><span onclick="showall()" class="bold">All</span><span onclick="showtype(0)" class="">Linux</span><span onclick="showtype(1)" class="">Open-Source</span><span onclick="showtype(2)" class="">Privacy</span>
+		</div>
+	</section>
+
 	<section class="section software-grid">
-
-		<div class="padding childhover" id="tabs" style="text-align: center">
-			Filter: <span onclick="showall()" class="bold">All</span> <span onclick="showtype(0)">Linux</span> <span onclick="showtype(1)">Open-Source</span> <span onclick="showtype(2)">Privacy</span>
-		</div>
-
-		<div class="card padding" style="text-align: center; line-height: 2;">
-			<i class="fas fa-times hover" style="float: right;" onclick="this.parentElement.style.display = 'none';"></i><b>Help</b><br/>
-			<i class="fab fa-linux"></i> Runs on linux ? <i class="fas fa-lock-open"></i> Is open-source ? <i class="fas fa-shield-alt"></i> Respects privacy ?<br/>
-			<i class="fas fa-check"></i> Yes <i class="fas fa-times"></i> No <i class="fas fa-question"></i> Unknown <i class="fas fa-minus-circle"></i> Mixed <i class="fas fa-cloud"></i> Website <i class="fab fa-android"></i> Android app
-		</div>
 
 		<a class="padding" data-fields="1111">
 			<div><b>Software</b></div>
@@ -44,6 +40,12 @@
 			<i title="Is open-source ?" class="fas fa-lock-open"></i>
 			<i title="Respects user's privacy ?" class="fas fa-shield-alt"></i>
 		</a>
+
+		<div class="card padding" style="text-align: center; line-height: 2;">
+			<i class="fas fa-times hover" style="float: right;" onclick="this.parentElement.style.display = 'none';"></i><b>Help</b><br/>
+			<i class="fab fa-linux"></i> Runs on linux ? <i class="fas fa-lock-open"></i> Is open-source ? <i class="fas fa-shield-alt"></i> Respects privacy ?<br/>
+			<i class="fas fa-check"></i> Yes <i class="fas fa-times"></i> No <i class="fas fa-question"></i> Unknown <i class="fas fa-minus-circle"></i> Mixed <i class="fas fa-cloud"></i> Website <i class="fab fa-android"></i> Android app
+		</div>
 
 		<a class="card bad" data-fields="011">
 			<div><i class="fab fa-youtube"></i> Youtube</div>

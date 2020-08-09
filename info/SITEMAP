@@ -1,0 +1,30 @@
+Légende:
+
+> Page
++ Page à ajouter
+~ Séparation au sein d'une page
+# Filtre dans une page
+
+Plan du site:
+
+> Accueil
+> Projet (à propos)
+> Ressources (outils divers liés au monde open-source, Linux, ou la vie privée)
+	~ Ressources locales
+		> Logiciels (Alternatives et recommandations)
+			# Vie privée
+			# Open-source
+			# Linux
+		> Articles
+			~ Vie privée
+			~ Open-source
+			~ Linux
+		> Distributions
+		+ ROMs Android
+		+ Linux Hardware
+		+ Privacy dashboards (Liens vers les paramètres vie privée de divers services)
+	~ Annuaire de sites utiles
+		~ Vie privée
+		~ Open-source
+		~ Linux
+
