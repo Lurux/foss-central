@@ -12,11 +12,11 @@
 	<link rel="stylesheet" href="../styles.css">
 </head>
 
-<body onload="if(window.frameElement) { document.getElementById('header').classList.add('invisible'); }">
+<body onload="if(window.frameElement) { document.getElementById('header').remove(); }">
 
 <header id="header">
 	<div class="frame header">
-		<a href="../articles.html"><b><i class="fas fa-arrow-left"></i> Articles</b></a>
+		<a href="../articles.html" id="back" data-back="previous"><b><i class="fas fa-arrow-left"></i> Articles</b></a>
 		<a href="index.html"><b><span class="nosmall">FOSS Central </span><i class="fas fa-archive"></i></b></a>
 	</div>
 </header>
