@@ -2,7 +2,7 @@
 
 ### Beta 0.3 ✓
 
-- Complete the welcome page
+- Complete the homepage
 - Complete the about page
 - Use magic links in resources page (works without javascript)
 - Add separators in resources page
@@ -18,24 +18,23 @@
 - Improve filter bubbles ✓
 - Enlarge toolbar buttons (for phone use) ✓
 - Improve mini browser ✓
-- Rename article page ✓
-- Privacy dashboards
 <br/>
 
-- 1 improved page, 4 enhancements, 1 new resource
+- 1 improved page, 3 enhancements
 
 ### Future
 
 - Improve distros page
 - Add meta search
 - Add filter in resource page
-- Use more local ressources on homepage
+- Make a much better homepage
 - MoRe IcOnS
-- Android ROMs
 - Linux Hardware
+- Privacy dashboards
+- Android ROMs
 <br/>
 
-- 1 improved page, 4 enhancements, 2 new resources
+- 1 improved page, 4 enhancements, 3 new resources
 
 ### Release 1.0
 
@@ -44,3 +43,4 @@
 <br/>
 
 - 1 enhancement
+

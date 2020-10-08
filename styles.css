@@ -7,6 +7,10 @@
 	word-wrap: anywhere;
 }
 
+body, .card.invisible.nope {
+    background-color: #f9f9f9;
+}
+
 .frame {
 	width: 70%;
 	max-width: 1800px;
@@ -47,8 +51,8 @@
 	-ms-user-select: none;
 	user-select: none;
 }
-.buttonbar > span:hover {
-	background-color: #f9f9f9;
+.buttonbar > span:hover, .card.invisible:hover {
+	background-color: #f4f4f4;
 }
 
 #modal {
@@ -68,9 +72,15 @@
 	background-color: white;
 }
 
-.card:not(.invisible), .card.invisible:hover, footer, #search {
-	border-radius: 6px;
-	box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.5);
+.card:not(.invisible), .card.invisible, #search {
+	box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.4); /* Old: 1px 1px 3px 0px rgba(0, 0, 0, 0.5), Firefox: 0 1px 8px 0 rgba(12, 12, 13, 0.2) */
+}
+.card, #search {
+	border-radius: 5px; /* Old: 6px, Firefox: 3px */
+	background-color: white;
+}
+.card {
+	background-color: white;
 }
 
 #search {
@@ -79,7 +89,6 @@
 	top: 65px;
 	left:20%;
 	display: none;
-	background-color: white;
 	border-radius: 6px;
 
 	max-height: calc(100vh - 85px);
@@ -178,10 +187,6 @@ i.fas, i.fab, .nosmall {
 	background-color: #ccd9ff;
 }
 
-.card.invisible:hover {
-	background-color: #f9f9f9;
-}
-
 .hover, a, .invisible, .childhover > * {
 	transition: 0.3s ease;
 	cursor: pointer;
@@ -203,14 +208,13 @@ a.hover {
 }
 
 .tag {
-	color: #ffffff;
-	background-color: #616161;
+	color: white;
+	background-color: #666666;
 	padding: 0 4px;
 	border-radius: 4px;
-	margin-right: 4px;
-}
-.tag.red {
-	background-color: darkred;
+	margin-top: 4px;
+	white-space: nowrap;
+	display: inline-block;
 }
 
 .hidden {
@@ -236,4 +240,21 @@ a.hover {
 	.card { border-radius: 0 !important; }
 	#search { width: 100%; left: 0; }
 	.column { grid-template-columns: 1fr; }
+}
+
+@media (prefers-color-scheme: dark) {
+    body, .card.invisible.nope {
+        background-color: #282828;
+    }
+
+	.card:not(.invisible), .card.invisible, #search {
+        background-color: #383838;
+	}
+	.buttonbar > span:hover, .card.invisible:hover {
+		background-color: #333333;
+	}
+
+	*, a {
+        color: #f9f9f9;
+	}
 }
