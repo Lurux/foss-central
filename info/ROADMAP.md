@@ -14,33 +14,40 @@
 
 ### Beta 0.4
 
-- Rebuild software page
+- Rebuild software page ✓
 - Improve filter bubbles ✓
 - Enlarge toolbar buttons (for phone use) ✓
 - Improve mini browser ✓
+- Updated styles with automatic dark theme ✓
 <br/>
 
-- 1 improved page, 3 enhancements
+- 1 improved page, 4 enhancements
+- 8 October 2020
+
+### Beta 0.5
+
+- Rebuild homepage
+- Updated styles
+- Add meta search
+
+<br/>
+
+- 1 improved page, 2 enhancements
 
 ### Future
 
 - Improve distros page
-- Add meta search
 - Add filter in resource page
-- Make a much better homepage
-- MoRe IcOnS
+- Add illustrations
 - Linux Hardware
 - Privacy dashboards
 - Android ROMs
 <br/>
 
-- 1 improved page, 4 enhancements, 3 new resources
+- 1 improved page, 2 enhancements, 3 new resources
 
 ### Release 1.0
 
-- Rebuild stylesheet
-- Make sure all links are secured
-<br/>
-
-- 1 enhancement
+- Updated pages and stylesheets
+- Check all external links
 
