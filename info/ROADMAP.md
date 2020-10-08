@@ -12,13 +12,13 @@
 - 2 improved pages, 2 enhancements, 1 new resource
 - 29 July 2020
 
-### Beta 0.4
+### Beta 0.4 ✓
 
-- Rebuild software page ✓
-- Improve filter bubbles ✓
-- Enlarge toolbar buttons (for phone use) ✓
-- Improve mini browser ✓
-- Updated styles with automatic dark theme ✓
+- Rebuild software page
+- Improve filter bubbles
+- Enlarge toolbar buttons (for phone use)
+- Improve mini browser
+- Updated styles with automatic dark theme
 <br/>
 
 - 1 improved page, 4 enhancements
