@@ -17,16 +17,16 @@ Visit us at https://lurux.github.io/foss-central/ !
 ### Beta 0.5
 
 - Rebuild homepage
-- Updated styles
 - Add meta search
+- Update styles
 
 [See more](/info/ROADMAP.md)
 
-# Contribute
+## Contribute
 
 Found a bug ? Missing ressources ? Or want to suggest software alternatives ? We're open to all suggestions ! Everyone is welcome to contribute on this repository.
 
-# Project information
+## Project information
 
 This website is distributed under the Mozilla Public License 2.0
 
