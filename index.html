@@ -30,6 +30,23 @@
 
 	<section class="section">
 		<div class="padding title">
+			<b>Shortcuts</b>
+		</div>
+		<div class="flex">
+			<a href="software.html" class="card">
+				<b>Software alternatives</i></b><i class="right fas fa-archive"></i><br/>Find open-source and privacy-focused alternatives for common software.
+			</a>
+			<a href="articles.html" class="card">
+				<b>Articles</i></b><i class="right fas fa-archive"></i><br/>Guides and articles about open-source software and privacy.
+			</a>
+			<a href="distros.html" class="card">
+				<b>Linux distributions</i></b><i class="right fas fa-archive"></i><br/>A non-exhaustive list of linux distributions we would recommend.
+			</a>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="padding title">
 			<b>Why privacy matters ?</b>
 		</div>
 		<div class="padding" style="margin-bottom: 16px;">
@@ -103,6 +120,48 @@
 	</section>
 
 </main>
+
+
+
+<div id="modal">
+	<header>
+		<div class="hbutton" onclick="modalback()"><b><i class="fas fa-arrow-left"></i><span class="nosmall"> Back</span></b></div>
+		<div style="display: flex;"><span class="hbutton" onclick="opensearch()"><i id="search-modal" class="fas fa-search"></i></span><span class="current" id="mod-title">Title...</span></div>
+		<a href="" target="_blank" rel="noopener noreferrer"><b><span class="nosmall">Open </span><i class="fas fa-external-link-alt"></i></b></a>
+	</header>
+	<iframe src="" title="" onload="document.getElementById('search-modal').classList = 'fas fa-search';">
+	</iframe>
+</div>
+
+<div id="search" class="padding">
+	<b class="card invisible" style="float: right;" onclick="closesearch()"><i class="fas fa-times"></i></b>
+	<input placeholder="Search something..." id="searchbox" class="padding">
+	<p class="padding">...on this website:</p>
+	<div class="card invisible" onclick="dosearch('DistroWatch')">
+		<b>DistroWatch<i>.org</i></b><br/>Find a distribution on DistroWatch
+	</div>
+	<div class="card invisible" onclick="dosearch('DistroWatch Articles')">
+		<b>DistroWatch Articles</b><br/>Search for tips, headlines, and reviews
+	</div>
+	<div class="card invisible" onclick="dosearch('DistroTest')">
+		<b>DistroTest<i>.net</i></b><br/>Try a distribution on DistroTest
+	</div>
+	<div class="card invisible" onclick="dosearch('FSF Directory')">
+		<b>Directory.FSF<i>.org</i></b><br/>Search for open-source projects
+	</div>
+	<div class="card invisible" onclick="dosearch('OpenSourceSoftwareDirectory')">
+		<b>OpenSourceSoftwareDirectory<i>.com</i></b><br/>Find specific programs or usage
+	</div>
+	<div class="card invisible" onclick="dosearch('AlternativeTo')">
+		<b>AlternativeTo<i>.net</i></b><br/>Search alternatives for a piece of software
+	</div>
+	<div class="card invisible" onclick="dosearch('SecureMessagingApps')">
+		<b><i>www.</i>SecureMessagingApps<i>.com</i></b><br/>Find articles on SecureMessagingApps
+	</div>
+	<div class="card invisible" onclick="dosearch('DuckDuckGo')">
+		<b>DuckDuckGo<i>.com</i></b><br/>Privacy focused search engine
+	</div>
+</div>
 
 </body>
 

@@ -36,43 +36,46 @@
 			<b>FOSS Central</b>
 		</div>
 		<div class="flex">
-			<a href="software.html" class="card invisible" onclick="return modal(this, 'Software')">
+			<a href="software.html" class="card">
 				<b>Software alternatives</i></b><i class="right fas fa-archive"></i><br/>Find open-source and privacy-focused alternatives for common software.
 			</a>
-			<a href="articles.html" class="card invisible" onclick="return modal(this, 'Articles')">
+			<a href="articles.html" class="card">
 				<b>Articles</i></b><i class="right fas fa-archive"></i><br/>Guides and articles about open-source software and privacy.
 			</a>
-			<a href="distros.html" class="card invisible" onclick="return modal(this, 'Distributions')">
+			<a href="distros.html" class="card">
 				<b>Linux distributions</i></b><i class="right fas fa-archive"></i><br/>A non-exhaustive list of linux distributions we would recommend.
 			</a>
 		</div>
 	</section>
 
-	<section class="section separator">
+	<section class="section separator" id="extb">
 		<div class="padding">
 			<b>Websites </b><b id="search-main" onclick="opensearch()" class="hover"><i class="fas fa-search"></i></b>
 		</div>
 		<div class="padding">
 			These websites provide you with additionnal ressources about software choice, privacy and Linux systems. You can search on them using the magnifier icon above.
 		</div>
+		<div class="padding">
+			Open the websites in a mini-browser <span class="toggle"><input type="checkbox" onclick="browsertoggle(this)" checked/><i class="fas fa-search"></i></span>
+		</div>
 
 		<div class="padding title">
 			<b>Software & Privacy</b>
 		</div>
 		<div class="flex">
-			<a href="https://prism-break.org" target="_blank" rel="noopener noreferrer" class="card invisible" onclick="return modal(this, 'Prism-Break')">
+			<a href="https://prism-break.org" target="_blank" rel="noopener noreferrer" class="card" onclick="return modal(this, 'Prism-Break')">
 				<b>Prism-Break<i>.org</i></b><i class="right fas fa-star"></i><br/>List of recomended software for digital privacy and avoiding mass surveillance.
 			</a>
-			<a href="https://alternativeto.net" target="_blank" rel="noopener noreferrer" class="card invisible" onclick="return modal(this, 'AlternativeTo')">
-				<b>AlternativeTo<i>.net</i></b><i class="right fas fa-star"></i><br/>Find alternatives to common software, filtering them by price, license, or operating system.
+			<a href="https://alternativeto.net" target="_blank" rel="noopener noreferrer" class="card" onclick="return modal(this, 'AlternativeTo')">
+				<b>AlternativeTo<i>.net</i></b><i class="right fas fa-share ext"></i><i class="right fas fa-star"></i><br/>Find alternatives to common software, filtering them by price, license, or operating system.
 			</a>
-			<a href="https://www.privacytools.io" target="_blank" rel="noopener noreferrer" class="card invisible" onclick="return modal(this, 'PrivacyTools')">
-				<b><i>www.</i>PrivacyTools<i>.io</i></b><br/>Website offering in-depth information about digital privacy and proving software recomendations for common tasks.
+			<a href="https://www.privacytools.io" target="_blank" rel="noopener noreferrer" class="card" onclick="return modal(this, 'PrivacyTools')">
+				<b><i>www.</i>PrivacyTools<i>.io</i></b><i class="right fas fa-share ext"></i><br/>Website offering in-depth information about digital privacy and proving software recomendations for common tasks.
 			</a>
-			<a href="https://thatoneprivacysite.net" target="_blank" rel="noopener noreferrer" class="card invisible" onclick="return modal(this, 'ThatOnePrivacySite')">
+			<a href="https://thatoneprivacysite.net" target="_blank" rel="noopener noreferrer" class="card" onclick="return modal(this, 'ThatOnePrivacySite')">
 				<b>ThatOnePrivacySite<i>.net</i></b><br/>Get informations about privacy, and comparisons between mail clients & VPNs.
 			</a>
-			<a href="https://www.securemessagingapps.com" target="_blank" rel="noopener noreferrer" class="card invisible" onclick="return modal(this, 'SecureMessagingApps')">
+			<a href="https://www.securemessagingapps.com" target="_blank" rel="noopener noreferrer" class="card" onclick="return modal(this, 'SecureMessagingApps')">
 				<b><i>www.</i>SecureMessagingApps<i>.com</i></b><br/>Comparison of various messaging apps in regard of private communications.
 			</a>
 		</div>
@@ -81,22 +84,22 @@
 			<b>Linux Tools</b>
 		</div>
 		<div class="flex">
-			<a href="https://distrowatch.org" target="_blank" rel="noopener noreferrer" class="card invisible" onclick="return modal(this, 'Distrowatch')">
+			<a href="https://distrowatch.org" target="_blank" rel="noopener noreferrer" class="card" onclick="return modal(this, 'Distrowatch')">
 				<b>DistroWatch<i>.org</i></b><i class="right fas fa-star"></i><br/>Explore a large directory of distributions and filter them based on characteristics
 			</a>
-			<a href="https://librehunt.org" target="_blank" rel="noopener noreferrer" class="card invisible" onclick="return modal(this, 'LibreHunt')">
+			<a href="https://librehunt.org" target="_blank" rel="noopener noreferrer" class="card" onclick="return modal(this, 'LibreHunt')">
 				<b>LibreHunt<i>.org</i></b><i class="right fas fa-star"></i><br/>Good explanation about operating systems and quiz to find the best Linux distribution for you.
 			</a>
-			<a href="https://distrotest.net" target="_blank" rel="noopener noreferrer" class="card invisible" onclick="return modal(this, 'DistroTest')">
+			<a href="https://distrotest.net" target="_blank" rel="noopener noreferrer" class="card" onclick="return modal(this, 'DistroTest')">
 				<b>DistroTest<i>.net</i></b><br/>Remotely try various Linux distributions before using them on your computer.
 			</a>
-			<a href="https://distrochooser.de" target="_blank" rel="noopener noreferrer" class="card invisible" onclick="return modal(this, 'DistroChooser')">
+			<a href="https://distrochooser.de" target="_blank" rel="noopener noreferrer" class="card" onclick="return modal(this, 'DistroChooser')">
 				<b>DistroChooser<i>.de</i></b><br/>Create a ranking of the most suited Linux distributions for you based on a simple quiz.
 			</a>
-			<a href="https://linuxappfinder.com" target="_blank" rel="noopener noreferrer" class="card invisible" onclick="return modal(this, 'LinuxAppFinder')">
+			<a href="https://linuxappfinder.com" target="_blank" rel="noopener noreferrer" class="card" onclick="return modal(this, 'LinuxAppFinder')">
 				<b>LinuxAppFinder<i>.com</i></b><br/>List of open-source software covering a wide range of tasks for Linux.
 			</a>
-			<a href="https://www.linuxalt.com" target="_blank" rel="noopener noreferrer" class="card invisible" onclick="return modal(this, 'LinuxAlt')">
+			<a href="https://www.linuxalt.com" target="_blank" rel="noopener noreferrer" class="card" onclick="return modal(this, 'LinuxAlt')">
 				<b><i>www.</i>LinuxAlt<i>.com</i></b><br/>List of Linux alternatives to commonly used programs.
 			</a>
 		</div>
@@ -105,16 +108,16 @@
 			<b>Open Source Software</b>
 		</div>
 		<div class="flex">
-			<a href="https://opensourcesoftwaredirectory.com" target="_blank" rel="noopener noreferrer" class="card invisible" onclick="return modal(this, 'OpenSourceSoftwareDirectory')">
+			<a href="https://opensourcesoftwaredirectory.com" target="_blank" rel="noopener noreferrer" class="card" onclick="return modal(this, 'OpenSourceSoftwareDirectory')">
 				<b>OpenSourceSoftwareDirectory<i>.com</i></b><i class="right fas fa-star"></i><br/>Comprehensive list of open source software for home users, buisness owners and system admins.
 			</a>
-			<a href="https://directory.fsf.org" target="_blank" rel="noopener noreferrer" class="card invisible" onclick="return modal(this, 'FSF Directory')">
-				<b>Directory.FSF<i>.org</i></b><br/>Project of the Free Software Foundation to catalog useful free software running under free operating systems.
+			<a href="https://directory.fsf.org" target="_blank" rel="noopener noreferrer" class="card" onclick="return modal(this, 'FSF Directory')">
+				<b>Directory.FSF<i>.org</i></b><i class="right fas fa-share ext"></i><br/>Project of the Free Software Foundation to catalog useful free software running under free operating systems.
 			</a>
-			<a href="https://libreprojects.net" target="_blank" rel="noopener noreferrer" class="card invisible" onclick="return modal(this, 'LibreProjects')">
+			<a href="https://libreprojects.net" target="_blank" rel="noopener noreferrer" class="card" onclick="return modal(this, 'LibreProjects')">
 				<b>LibreProjects<i>.net</i></b><br/>Directory of open-source web apps classified by purpose.<br/>
 			</a>
-			<a href="https://droid-break.info" target="_blank" rel="noopener noreferrer" class="card invisible" onclick="return modal(this, 'Droid-Break')">
+			<a href="https://droid-break.info" target="_blank" rel="noopener noreferrer" class="card" onclick="return modal(this, 'Droid-Break')">
 				<b>Droid-Break<i>.info</i></b><br/>Directory of free and open-source alternative Android apps.<br/>
 			</a>
 		</div>

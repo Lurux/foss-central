@@ -7,7 +7,7 @@
 	word-wrap: anywhere;
 }
 
-body, .card.invisible.nope {
+body {
     background-color: #f9f9f9;
 }
 
@@ -51,8 +51,8 @@ body, .card.invisible.nope {
 	-ms-user-select: none;
 	user-select: none;
 }
-.buttonbar > span:hover, .card.invisible:hover {
-	background-color: #f4f4f4;
+.buttonbar > span:hover, a.card:hover, #search > .card:hover {
+	background-color: #f4f4f4 !important;
 }
 
 #modal {
@@ -72,15 +72,14 @@ body, .card.invisible.nope {
 	background-color: white;
 }
 
-.card:not(.invisible), .card.invisible, #search {
+.card:not(.invisible), .card.invisible:hover, #search {
 	box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.4); /* Old: 1px 1px 3px 0px rgba(0, 0, 0, 0.5), Firefox: 0 1px 8px 0 rgba(12, 12, 13, 0.2) */
+}
+.card:not(.invisible), #search {
+	background-color: white;
 }
 .card, #search {
 	border-radius: 5px; /* Old: 6px, Firefox: 3px */
-	background-color: white;
-}
-.card {
-	background-color: white;
 }
 
 #search {
@@ -95,7 +94,7 @@ body, .card.invisible.nope {
 	overflow: auto;
 }
 
-input {
+#searchbox {
 	width: calc(100% - 40px);
 	box-shadow: none;
 	border: 1px solid grey;
@@ -130,6 +129,11 @@ a {
 }
 .right {
 	float: right;
+}
+
+i.right {
+	margin-top: 4px;
+	margin-left: 6px;
 }
 
 img.left {
@@ -235,6 +239,27 @@ a.hover {
 	font-weight: bold;
 }
 
+.toggle > i {
+	font-size: larger;
+}
+.toggle > input {
+	vertical-align: middle;
+	opacity: 0;
+	position: absolute;
+	cursor: pointer;
+}
+.toggle > input:checked + i::before {
+	content: "\f205";
+}
+.toggle > input:not(:checked) + i::before {
+	content: "\f204";
+}
+
+#extb.boff .ext {
+	display: none;
+}
+
+
 @media (max-width: 800px) {
 	.nosmall { display: none; }
 }
@@ -247,15 +272,15 @@ a.hover {
 }
 
 @media (prefers-color-scheme: dark) {
-    body, .card.invisible.nope {
+    body {
         background-color: #282828;
     }
 
-	.card:not(.invisible), .card.invisible, #search {
+	.card:not(.invisible), #search, #modal > iframe {
         background-color: #383838;
 	}
-	.buttonbar > span:hover, .card.invisible:hover {
-		background-color: #333333;
+	.buttonbar > span:hover, a.card:hover, #search > .card:hover {
+		background-color: #333333 !important;
 	}
 
 	*, a {

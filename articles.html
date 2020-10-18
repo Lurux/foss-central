@@ -12,13 +12,12 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 
-<body onload="if(window.frameElement) { document.getElementById('header').style.display = 'none'; }">
+<body>
 
-<header id="header">
-	<div class="frame header">
-		<a href="ressources.html" id="back" data-back="main"><b><i class="fas fa-arrow-left"></i> Ressources</b></a>
-		<a href="index.html"><b><span class="nosmall">FOSS Central </span><i class="fas fa-archive"></i></b></a>
-	</div>
+<header>
+	<a href="index.html"><b><i class="fas fa-archive"></i><span class="nosmall"> FOSS Central</span></b></a>
+	<div style="display: flex;"><a href="index.html">Home</a><a href="ressources.html">Ressources</a><a href="about.html">About</a></div>
+	<a href="https://github.com/Lurux/foss-central" target="_blank"><b><span class="nosmall">Github </span><i class="fab fa-github"></i></b></a>
 </header>
 
 <main class="frame">
@@ -33,10 +32,10 @@
 	</section>
 
 	<section class="section column">
-		<a href="articles/windows.html" class="card invisible">
+		<a href="articles/windows.html" class="card">
 			<b>Windows</b><br>Tame Window's privacy settings in order to mitigate what data gets sent to Microsoft. Important of you need to use Windows !
 		</a>
-		<a href="articles/google.html" class="card invisible">
+		<a href="articles/google.html" class="card">
 			<b>Google</b><br>Explore various options to mitigate privacy invasion when using Google products or an Android phone.
 		</a>
 	</section>
@@ -63,7 +62,7 @@
 	</section>
 
 	<section class="section column">
-		<a href="https://whyprivacymatters.org" target="_blank" rel="noopener noreferrer" class="card invisible">
+		<a href="https://whyprivacymatters.org" target="_blank" rel="noopener noreferrer" class="card">
 			<b>WhyPrivacyMatters<i>.org</i></b><i class="right fas fa-newspaper"></i><br/>Explanation of the importance of digital privacy in the modern world.
 		</a>
 	</section>
