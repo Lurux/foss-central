@@ -26,17 +26,15 @@
 
 ### Beta 0.5
 
-- Style improvements ✓
-- Browser improvements ✓
--- No mini-browser for local pages
--- Classic header
--- Toggle on ressource page
+- Updated styles ✓
+- No mini-browser for local pages ✓
+- Mini-browser toggle on resources ✓
 - Rebuild homepage
 - Add meta search
 
 <br/>
 
-- 1 improved page, 3 enhancements
+- 1 improved page, 4 enhancements
 
 ### Future
 
