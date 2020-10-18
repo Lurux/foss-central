@@ -16,9 +16,11 @@ Visit us at https://lurux.github.io/foss-central/ !
 
 ### Beta 0.5
 
+- Updated styles ✓
+- No mini-browser for local pages ✓
+- Mini-browser toggle on resources ✓
 - Rebuild homepage
 - Add meta search
-- Update styles
 
 [See more](/info/ROADMAP.md)
 
