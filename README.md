@@ -5,7 +5,6 @@ Portal providing ressources and information about Linux, open-source, and digita
 Visit us at https://lurux.github.io/foss-central/ !
 
 ## Roadmap
-
 ### Beta 0.4 ✓
 
 - Rebuild software page
@@ -16,11 +15,11 @@ Visit us at https://lurux.github.io/foss-central/ !
 
 ### Beta 0.5
 
-- Updated styles ✓
+- Rebuild homepage
+- Update styles ✓
 - No mini-browser for local pages ✓
 - Mini-browser toggle on resources ✓
-- Rebuild homepage
-- Add meta search
+- Linux Hardware
 
 [See more](/info/ROADMAP.md)
 
