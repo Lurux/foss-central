@@ -51,7 +51,7 @@ body {
 	-ms-user-select: none;
 	user-select: none;
 }
-.buttonbar > span:hover, a.card:hover, #search > .card:hover {
+.buttonbar > span:hover, card:hover, #search > .card:hover {
 	background-color: #f4f4f4 !important;
 }
 
@@ -117,6 +117,12 @@ body {
 
 .card, .padding {
 	padding: 10px;
+}
+.card {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 a {
@@ -211,8 +217,8 @@ i.fas, i.fab, .nosmall {
 	filter: brightness(92%);
 }
 
-a.hover {
-	color: dodgerblue;
+a.hover, a.hover > i {
+	color: dodgerblue !important;
 }
 
 .tag {
@@ -243,10 +249,10 @@ a.hover {
 	font-size: larger;
 }
 .toggle > input {
-	vertical-align: middle;
 	opacity: 0;
 	position: absolute;
 	cursor: pointer;
+	width: 18px;
 }
 .toggle > input:checked + i::before {
 	content: "\f205";
@@ -283,7 +289,7 @@ a.hover {
 		background-color: #333333 !important;
 	}
 
-	*, a {
+	*:not(#searchbox), a {
         color: #f9f9f9;
 	}
 }

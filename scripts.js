@@ -1,4 +1,4 @@
-iframe_blacklist = ["directory.fsf.org", "www.privacytools.io", "alternativeto.net", "duckduckgo.com"];
+iframe_blacklist = ["directory.fsf.org", "thatoneprivacysite.net", "www.privacytools.io", "alternativeto.net", "duckduckgo.com"];
 search_adress = {"DistroWatch": "distrowatch.com/table.php?distribution=", "DistroWatch Articles": "distrowatch.org/dwres.php?resource=article-search&questions=on&tips=on&reviews=on&headlines=on&misc=on&lookfor=", "DistroTest": "distrotest.net/", "FSF Directory": "directory.fsf.org/wiki?search=", "OpenSourceSoftwareDirectory": "opensourcesoftwaredirectory.com/search/", "AlternativeTo": "alternativeto.net/browse/search?q=", "SecureMessagingApps": "www.securemessagingapps.com/?s=", "DuckDuckGo": "duckduckgo.com/?q="};
 
 mini_browser = true;
