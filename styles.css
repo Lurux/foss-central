@@ -51,7 +51,7 @@ body {
 	-ms-user-select: none;
 	user-select: none;
 }
-.buttonbar > span:hover, card:hover, #search > .card:hover {
+.buttonbar > span:hover, .card:hover, #search > .card:hover {
 	background-color: #f4f4f4 !important;
 }
 
