@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Linux - FOSS Central</title>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+	<link rel="stylesheet" href="/foss-central/styles.css">
+
+	<script src="/foss-central/scripts.js"></script>
+</head>
+
+<body>
+
+<header>
+	<div class="header frame">
+		<a href="/foss-central" style="padding: 0;display: flex;"><b class="padding"><i class="fas fa-home"></i></b><b class="padding"><i class="fas fa-caret-right"></i></b></a>
+		<div style="display: flex; flex-shrink: 1; overflow: hidden; justify-content: flex-end;">
+			<a href="/foss-central/resources.html" style="padding: 0;display: flex;"><span class="padding" style="line-height: 25px;">Resources</span><b class="padding"><i class="fas fa-caret-right"></i></b></a>
+			<span class="padding" style="line-height: 25px;">Linux</span>
+		</div>
+
+		<a href="/foss-central/search.html" style="flex-grow: 1;"><b style="float: right;"><i class="fas fa-search"></i></b></a>
+		<a href="/foss-central/about.html"><b><i class="fas fa-question-circle"></i></b></a>
+		<a href="/foss-central/about/sitemap.html"><b><i class="fas fa-sitemap"></i></b></a>
+		<a href="https://github.com/Lurux/foss-central" target="_blank"><b><i class="fab fa-github"></i></b></a>
+	</div>
+</header>
+
+<main class="frame">
+
+	<section class="section">
+		<div class="padding">
+			<b>FOSS Central</b>
+		</div>
+		<div class="padding">
+			<b><b>“Together, let's build a better digital world”</b></b>
+		</div>
+		<div class="padding" style="margin-bottom: 16px;">
+			We live in a world where big corporations know more and more about you. They actually know so much about you that they can make you buy what you don't want to buy, believe what they want you to believe, and influence your vote in presidential elections. Don't want to be part of this ? This website will help you build a free digital life.
+		</div>
+	</section>
+
+	<details class="card" id="guides" style="padding: 0;" open>
+		<summary class="padding">Show tool and resources</summary>
+
+		<div class="padding flex">
+			<a href="/foss-central/resources/linux/software.html" class="card invisible">
+				<b>Software alternatives</i></b><i class="right fas fa-archive"></i><br/>Find open-source and privacy-focused alternatives for common software.
+			</a>
+			<a href="/foss-central/resources/linux/distros.html" class="card invisible">
+				<b>Linux distributions</i></b><i class="right fas fa-archive"></i><br/>A non-exhaustive list of linux distributions we would recommend.
+			</a>
+		</div>
+	</details>
+
+	<section class="section">
+		<div class="padding title">
+			<b>What is Linux ? What are its pros and cons ?</b>
+		</div>
+		<div class="padding">
+			Linux is an open-source operating system - the piece of software that is responsible for your computer to work. Because it is open-source, Linux is very secure, and respects user's privacy. Contrary to Windows and Mac OS, Linux does not collect <span class="bold">any</span> user data.
+		</div>
+		<div class="padding">
+			On top of that, Linux has many other advantages; for example, it very fast, stable, and allows you to customize it the way you want by changing components like its user interface. Finally, Linux is also free, and can usually be tested using a simple USB stick !
+		</div>
+		<div class="padding">
+			Oh, I almost forgot. Because Linux comes in so many variations called "distributions", it is possible to find a version that will fit very specific needs, like doing security testing or scientific research - or just reviving very, very old computers. <a class="hover" href="https://librehunt.org" target="_blank" rel="noopener noreferrer">Discover <i class="fas fa-external-link-alt"></i></a>
+		</div>
+	</section>
+
+	<section class="section separator">
+		<div class="padding">
+			<b>External resources</b>
+		</div>
+
+		<details class="card" id="guides" style="padding: 0;" open>
+			<summary class="padding">Show external resources</summary>
+
+			<div class="padding">
+				These external sources will allow you to learn more about Linux and open-source software.
+			</div>
+
+			<div class="flex padding">
+				<a href="https://distrowatch.org" target="_blank" rel="noopener noreferrer" class="card invisible" onclick="return modal(this, 'Distrowatch')">
+					<b>DistroWatch<i>.org</i></b><i class="right fas fa-star"></i><br/>Explore a large directory of distributions and filter them based on characteristics
+				</a>
+				<a href="https://librehunt.org" target="_blank" rel="noopener noreferrer" class="card invisible" onclick="return modal(this, 'LibreHunt')">
+					<b>LibreHunt<i>.org</i></b><i class="right fas fa-star"></i><br/>Good explanation about operating systems and quiz to find the best Linux distribution for you.
+				</a>
+				<a href="https://distrotest.net" target="_blank" rel="noopener noreferrer" class="card invisible" onclick="return modal(this, 'DistroTest')">
+					<b>DistroTest<i>.net</i></b><br/>Remotely try various Linux distributions before using them on your computer.
+				</a>
+				<a href="https://distrochooser.de/en/" target="_blank" rel="noopener noreferrer" class="card invisible" onclick="return modal(this, 'DistroChooser')">
+					<b>DistroChooser<i>.de</i></b><br/>Create a ranking of the most suited Linux distributions for you based on a simple quiz.
+				</a>
+				<a href="https://linuxappfinder.com" target="_blank" rel="noopener noreferrer" class="card invisible" onclick="return modal(this, 'LinuxAppFinder')">
+					<b>LinuxAppFinder<i>.com</i></b><br/>List of open-source software covering a wide range of tasks for Linux.
+				</a>
+				<a href="https://www.linuxalt.com" target="_blank" rel="noopener noreferrer" class="card invisible" onclick="return modal(this, 'LinuxAlt')">
+					<b><i>www.</i>LinuxAlt<i>.com</i></b><br/>List of Linux alternatives to commonly used programs.
+				</a>
+			</div>
+		</details>
+	</section>
+
+</main>
+
+
+
+<div id="modal">
+	<header>
+		<div class="hbutton" onclick="modalback()"><b><i class="fas fa-arrow-left"></i><span class="nosmall"> Back</span></b></div>
+		<div style="display: flex;"><span class="hbutton" onclick="opensearch()"><i id="search-modal" class="fas fa-search"></i></span><span class="current" id="mod-title">Title...</span></div>
+		<a href="" target="_blank" rel="noopener noreferrer"><b><span class="nosmall">Open </span><i class="fas fa-external-link-alt"></i></b></a>
+	</header>
+	<iframe src="" title="" onload="document.getElementById('search-modal').classList = 'fas fa-search';">
+	</iframe>
+</div>
+</body>
+
+</html>
+

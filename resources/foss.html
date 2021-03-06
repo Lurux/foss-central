@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>FOSS - FOSS Central</title>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+	<link rel="stylesheet" href="/foss-central/styles.css">
+
+	<script src="/foss-central/scripts.js"></script>
+</head>
+
+<body>
+
+<header>
+	<div class="header frame">
+		<a href="/foss-central" style="padding: 0;display: flex;"><b class="padding"><i class="fas fa-home"></i></b><b class="padding"><i class="fas fa-caret-right"></i></b></a>
+		<div style="display: flex; flex-shrink: 1; overflow: hidden; justify-content: flex-end;">
+			<a href="/foss-central/resources.html" style="padding: 0;display: flex;"><span class="padding" style="line-height: 25px;">Resources</span><b class="padding"><i class="fas fa-caret-right"></i></b></a>
+			<span class="padding" style="line-height: 25px;">FOSS</span>
+		</div>
+
+		<a href="/foss-central/search.html" style="flex-grow: 1;"><b style="float: right;"><i class="fas fa-search"></i></b></a>
+		<a href="/foss-central/about.html"><b><i class="fas fa-question-circle"></i></b></a>
+		<a href="/foss-central/about/sitemap.html"><b><i class="fas fa-sitemap"></i></b></a>
+		<a href="https://github.com/Lurux/foss-central" target="_blank"><b><i class="fab fa-github"></i></b></a>
+	</div>
+</header>
+
+<main class="frame">
+
+	<section class="section">
+		<div class="padding">
+			<b>FOSS Central</b>
+		</div>
+		<div class="padding">
+			<b><b>“Together, let's build a better digital world”</b></b>
+		</div>
+		<div class="padding" style="margin-bottom: 16px;">
+			We live in a world where big corporations know more and more about you. They actually know so much about you that they can make you buy what you don't want to buy, believe what they want you to believe, and influence your vote in presidential elections. Don't want to be part of this ? This website will help you build a free digital life.
+		</div>
+	</section>
+
+	<details class="card" id="guides" style="padding: 0;" open>
+		<summary class="padding">Show tool and resources</summary>
+
+		<div class="padding flex">
+			<a href="/foss-central/resources/foss/software.html" class="card invisible">
+				<b>Open Source projects</i></b><i class="right fas fa-archive"></i><br/>Find open-source and privacy-focused alternatives for common software.
+			</a>
+		</div>
+	</details>
+
+	<section class="section">
+		<div class="padding title">
+			<b>What is Open Source software ? What are its benefits ?</b>
+		</div>
+		<div class="padding">
+			When a piece of software is open-source, anyone can see its source code, propose new features or submit security fixes, and edit it to make their own version. Here's why this is interesting:
+		</div>
+		<ul style="margin-bottom: 16px;">
+			<li class="padding">
+				If the creators of a project or a malicious person try to sneak in bad features to collect or misuse user data, people will be able to see it, and either correct it or spread the word.
+			</li>
+			<li class="padding">
+				Because so many persons are watching the source code, big open-source projects are usually very secure. Do note there may be exceptions to that, especially with smaller project with a little community.
+			</li>
+			<li class="padding">
+				Finally, because of their ideology, open-source projects will usually tend to listen and give a lot of freedom to their users. Since anyone can make their own version, open-source projects have a big incentive to please their community, which is why so many of them are actually community-driven.
+			</li>
+		</ul>
+		<div class="padding">
+			In the end, open-source projects are an excellent way to get better products, defending their user's rights, privacy and digital freedom. While all open-source projects may not be perfect, they usually are a good guarantee of quality and security. <a class="hover" href="https://opensource.org/osd" target="_blank" rel="noopener noreferrer">Learn more <i class="fas fa-external-link-alt"></i></a>
+		</div>
+	</section>
+
+	<section class="section separator">
+		<div class="padding">
+			<b>External resources</b>
+		</div>
+
+		<details class="card" id="guides" style="padding: 0;" open>
+			<summary class="padding">Show external resources</summary>
+
+			<div class="flex padding">
+				<a href="https://opensourcesoftwaredirectory.com" target="_blank" rel="noopener noreferrer" class="card invisible" onclick="return modal(this, 'OpenSourceSoftwareDirectory')">
+					<b>OpenSourceSoftwareDirectory<i>.com</i></b><i class="right fas fa-star"></i><br/>Comprehensive list of open source software for home users, buisness owners and system admins.
+				</a>
+				<a href="https://directory.fsf.org" target="_blank" rel="noopener noreferrer" class="card invisible" onclick="return modal(this, 'FSF Directory')">
+					<b>Directory.FSF<i>.org</i></b><i class="right fas fa-share ext"></i><br/>Project of the Free Software Foundation to catalog useful free software running under free operating systems.
+				</a>
+				<a href="https://libreprojects.net" target="_blank" rel="noopener noreferrer" class="card invisible" onclick="return modal(this, 'LibreProjects')">
+					<b>LibreProjects<i>.net</i></b><br/>Directory of open-source web apps classified by purpose.<br/>
+				</a>
+				<a href="https://droid-break.info" target="_blank" rel="noopener noreferrer" class="card invisible" onclick="return modal(this, 'Droid-Break')">
+					<b>Droid-Break<i>.info</i></b><br/>Directory of free and open-source alternative Android apps.<br/>
+				</a>
+			</div>
+		</details>
+	</section>
+
+</main>
+
+
+
+<div id="modal">
+	<header>
+		<div class="hbutton" onclick="modalback()"><b><i class="fas fa-arrow-left"></i><span class="nosmall"> Back</span></b></div>
+		<div style="display: flex;"><span class="hbutton" onclick="opensearch()"><i id="search-modal" class="fas fa-search"></i></span><span class="current" id="mod-title">Title...</span></div>
+		<a href="" target="_blank" rel="noopener noreferrer"><b><span class="nosmall">Open </span><i class="fas fa-external-link-alt"></i></b></a>
+	</header>
+	<iframe src="" title="" onload="document.getElementById('search-modal').classList = 'fas fa-search';">
+	</iframe>
+</div>
+</body>
+
+</html>
+

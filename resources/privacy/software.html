@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Software - FOSS Central</title>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+	<link rel="stylesheet" href="/foss-central/styles.css">
+	<link rel="stylesheet" href="/foss-central/software-grid.css">
+
+	<script src="/foss-central/software.js"></script>
+</head>
+<body>
+
+<header>
+	<div class="header frame">
+		<a href="/foss-central" style="padding: 0;display: flex;"><b class="padding"><i class="fas fa-home"></i></b><b class="padding"><i class="fas fa-caret-right"></i></b></a>
+		<div style="display: flex; flex-shrink: 1; overflow: hidden; justify-content: flex-end;">
+			<a href="/foss-central/resources.html" style="padding: 0;display: flex;"><span class="padding" style="line-height: 25px;">Resources</span><b class="padding"><i class="fas fa-caret-right"></i></b></a>
+			<a href="/foss-central/resources/privacy.html" style="padding: 0;display: flex;"><span class="padding" style="line-height: 25px;">Privacy</span><b class="padding"><i class="fas fa-caret-right"></i></b></a>
+			<span class="padding" style="line-height: 25px;">Software</span>
+		</div>
+
+		<a href="/foss-central/search.html" style="flex-grow: 1;"><b style="float: right;"><i class="fas fa-search"></i></b></a>
+		<a href="/foss-central/about.html"><b><i class="fas fa-question-circle"></i></b></a>
+		<a href="/foss-central/about/sitemap.html"><b><i class="fas fa-sitemap"></i></b></a>
+		<a href="https://github.com/Lurux/foss-central" target="_blank"><b><i class="fab fa-github"></i></b></a>
+	</div>
+</header>
+
+<main class="frame">
+
+	<section class="section">
+		<div class="padding" style="text-align: center">
+			<b>Recommended Software</b>
+		</div>
+		<div class="padding" style="text-align: center">
+			This selection of recommended software and web services will help you improve your security and online privacy by giving you the opportunity to discover various open-source projects, privacy protections, and secure alternatives to major services we all use and love.
+		</div>
+
+		<div class="card section" style="text-align: center">
+			Note: Because this website is still under construction, some sections here may be incomplete. Don't hesitate to post an issue on Github if you want to help out !
+		</div>
+
+	</section>
+
+	<section class="section">
+		<div class="card buttonbar" id="tabs">
+			<i class="fas fa-filter"></i><span onclick="showall()" class="bold">All</span><span onclick="showtype(0)" class="">Desktop</span><span onclick="showtype(1)" class="">Phone</span><span onclick="showtype(2)" class="">Web</span>
+		</div>
+	</section>
+
+	<section class="section software-grid">
+
+		<section data-filter="101">
+			<div class="card">
+				<b>Browser Extensions</b>
+				<p>The web has become very important in our daily lives, but it is filled with invisible trackers, malicious sites, and annoying ads. Use these web extensions, available in all major browsers, to protect yourself from those threats.</p>
+			</div>
+			<div class="card">
+				<details data-filter="101">
+					<summary>
+						uBlock Origin<span><i class="fas fa-ad"></i><i class="fas fa-unlock"></i></span>
+					</summary>
+					<div class="">
+						uBlock Origin is a fast, open-source ad blocker designed to protect you from various trackers and block annoying ads on webpages. It is very efficient and customizable. <a class="hover" href="https://ublockorigin.com" target="_blank">Open.</a>
+						<p>
+							<span class="tag"><i class="fas fa-ad"></i>Ad blocker</span>
+							<span class="tag"><i class="fas fa-unlock"></i>Open Source</span>
+						</p>
+					</div>
+				</details>
+
+				<details data-filter="101">
+					<summary>
+						ClearURLs<span><i class="fas fa-mask"></i><i class="fas fa-unlock"></i></span>
+					</summary>
+					<div class="">
+						This open-source extension automatically removes tracking elements often found in redirection and other URLs, in order to protect your privacy without breaking websites. <a class="hover" href="https://gitlab.com/KevinRoebert/ClearUrls/-/blob/master/README.md" target="_blank">Open.</a>
+						<p>
+							<span class="tag"><i class="fas fa-mask"></i>Tracker blocker</span>
+							<span class="tag"><i class="fas fa-unlock"></i>Open Source</span>
+						</p>
+					</div>
+				</details>
+
+				<details data-filter="101">
+					<summary>
+						Privacy Badger<span><i class="fas fa-mask"></i><i class="fas fa-unlock"></i></span>
+					</summary>
+					<div class="">
+						Privacy Badger is an open-source extension that automatically learns to block invisible trackers on the net. It efficiently complements list-based ad blockers like uBlock by protecting you from unknown web trackers. <a class="hover" href="https://privacybadger.org" target="_blank">Open.</a>
+						<p>
+							<span class="tag"><i class="fas fa-mask"></i>Tracker blocker</span>
+							<span class="tag"><i class="fas fa-unlock"></i>Open Source</span>
+						</p>
+					</div>
+				</details>
+
+				<details data-filter="101">
+					<summary>
+						HTTPS Everywhere<span><i class="fas fa-key"></i><i class="fas fa-unlock"></i></span>
+					</summary>
+					<div class="">
+						HTTPS Everywhere is an open-source extension that forces websites to use an encrypted HTTPS connection when you visit them, in order to prevent the data in pages you visit from being publicly available. <a class="hover" href="https://www.eff.org/https-everywhere" target="_blank">Open.</a>
+						<p>
+							<span class="tag"><i class="fas fa-key"></i>Encryption</span>
+							<span class="tag"><i class="fas fa-unlock"></i>Open Source</span>
+						</p>
+					</div>
+				</details>
+
+				<details data-filter="101">
+					<summary>
+						DuckDuckGo Privacy Essentials<span><i class="fas fa-cog"></i><i class="fas fa-unlock"></i></span>
+					</summary>
+					<div class="">
+						DuckDuckGo Privacy Essentials is a multi-purpose privacy extension that roughly combines the capabilities of Privacy Badger and HTTPS everywhere. While very convenient, it does not seem to be as effective as Privacy Badger at blocking trackers. <a class="hover" href="https://duckduckgo.com/app" target="_blank">Open.</a>
+						<p>
+							<span class="tag"><i class="fas fa-cog"></i>Multipurpose</span>
+							<span class="tag"><i class="fas fa-unlock"></i>Open Source</span>
+						</p>
+					</div>
+				</details>
+			</div>
+		</section>
+
+		<section data-filter="111">
+			<div class="card">
+				<b>Online Videos</b>
+				<p><span class="tag"><i class="fas fa-times"></i>Avoid</span> Youtube</p>
+				<p>We have become increasingly reliant on Youtube to watch online videos, but other more privacy-respecting platforms now exist to do that. Discover unique content or watch Youtube videos anonymously using these alternative platforms...</p>
+			</div>
+			<div class="card">
+				<details data-filter="111">
+					<summary>
+						Invidious<span><i class="fab fa-youtube"></i><i class="fas fa-cloud"></i><i class="fas fa-unlock"></i></span>
+					</summary>
+					<div class="">
+						Invidious allows you to browse and watch Youtube videos anonymously. By creating an account on an Invidious instance, you'll also be able to import your playists subscriptions. <a class="hover" href="https://invidio.us" target="_blank">Open.</a>
+						<p>
+							<span class="tag"><i class="fab fa-youtube"></i>Youtube videos</span>
+							<span class="tag"><i class="fas fa-cloud"></i>Web app</span>
+							<span class="tag"><i class="fas fa-unlock"></i>Private & Open Source</span>
+						</p>
+					</div>
+				</details>
+
+				<details data-filter="111">
+					<summary>
+						Peertube<span><i class="fas fa-film"></i><i class="fas fa-cloud"></i><i class="fas fa-unlock"></i></span>
+					</summary>
+					<div class="">
+						Peertube is a private and decentralised platform to watch and share videos. When logging in to an instance, you will be able to rate and comment videos on many other instances. <a class="hover" href="https://joinpeertube.org" target="_blank">Open.</a>
+						<p>
+							<span class="tag"><i class="fas fa-film"></i>Unique content</span>
+							<span class="tag"><i class="fas fa-cloud"></i>Web app</span>
+							<span class="tag"><i class="fas fa-unlock"></i>Private & Open Source</span>
+						</p>
+					</div>
+				</details>
+
+				<details data-filter="111">
+					<summary>
+						LBRY<span><i class="fas fa-film"></i><i class="fas fa-globe"></i><i class="fas fa-unlock"></i></span>
+					</summary>
+					<div class="">
+						LBRY is a open-source, private, and decentralised digital marketplace to watch videos and other unique content created by its dedicated community. <a class="hover" href="https://lbry.com/" target="_blank">Open.</a>
+						<p>
+							<span class="tag"><i class="fas fa-film"></i>Unique content</span>
+							<span class="tag"><i class="fas fa-globe"></i>All platforms</span>
+							<span class="tag"><i class="fas fa-unlock"></i>Private & Open Source</span>
+						</p>
+					</div>
+				</details>
+
+				<details data-filter="010">
+					<summary>
+						Newpipe<span><i class="fab fa-youtube"></i><i class="fas fa-mobile-alt"></i><i class="fas fa-unlock"></i></span>
+					</summary>
+					<div class="">
+						Newpipe is an Android app to privately watch Youtube videos. It allows you to locally keep track of your history, create playlists, listen to music in audio-only mode, and download videos. It also connects to other platforms such as Peertube and Soundcloud. <a class="hover" href="https://newpipe.schabi.org" target="_blank">Open.</a>
+						<p>
+							<span class="tag"><i class="fab fa-youtube"></i>Youtube videos</span>
+							<span class="tag"><i class="fas fa-mobile-alt"></i>Android</span>
+							<span class="tag"><i class="fas fa-unlock"></i>Private & Open Source</span>
+						</p>
+					</div>
+				</details>
+
+				<details data-filter="100">
+					<summary>
+						Freetube<span><i class="fab fa-youtube"></i><i class="fas fa-desktop"></i><i class="fas fa-unlock"></i></span>
+					</summary>
+					<div class="">
+						Freetube is a desktop app allowing you to privately watch Youtube videos, with a local history, subscriptions, and playlist system. Freetube is currently in beta, but a complete rewrite is ongoing. <a class="hover" href="https://freetubeapp.io" target="_blank">Open.</a>
+						<p>
+							<span class="tag"><i class="fab fa-youtube"></i>Youtube videos</span>
+							<span class="tag"><i class="fas fa-desktop"></i>All desktops</span>
+							<span class="tag"><i class="fas fa-unlock"></i>Private & Open Source</span>
+						</p>
+					</div>
+				</details>
+			</div>
+		</section>
+
+		<section data-filter="111">
+			<div class="card">
+				<b>Social Networks</b>
+				<p><span class="tag"><i class="fas fa-times"></i>Avoid</span> Facebook, Twitter, Snapchat...</p>
+				<p>Social networks have become an integral part of our digital lives, but they have also become extremely thirsty of user data. With very bad privacy practices, regular hacks and data leaks, and an annoying ability to lock us down on their platforms, most major social networks should be replaced by free and open-source alternatives.</p>
+			</div>
+			<div class="card">
+				<details data-filter="111">
+					<summary>
+						Mastodon<span><i class="fas fa-sitemap"></i><i class="fas fa-globe"></i><i class="fas fa-unlock"></i></span>
+					</summary>
+					<div class="">
+						Mastodon is a free, open-source and decentralized social network to connect with your friends. Every Mastodon instance is managed by an independent community, with various instances focusing on different topics and giving their users freedom and flexinility. <a class="hover" href="https://joinmastodon.org/" target="_blank">Open.</a>
+						<p>
+							<span class="tag"><i class="fas fa-sitemap"></i>Decentralized</span>
+							<span class="tag"><i class="fas fa-globe"></i>All platforms</span>
+							<span class="tag"><i class="fas fa-unlock"></i>Private & Open Source</span>
+						</p>
+					</div>
+				</details>
+
+                <details data-filter="111">
+					<summary>
+						PixelFed<span><i class="fas fa-sitemap"></i><i class="fas fa-cloud"></i><i class="fas fa-unlock"></i></span>
+					</summary>
+					<div class="">
+						As Mastodon, PixelFed is a part of <a class="hover" href="https://fediverse.party" target="_blank">Fediverse</a>. It's an instagram alternative. <a class="hover" href="https://pixelfed.org/" target="_blank">Open.</a>
+						<p>
+							<span class="tag"><i class="fas fa-sitemap"></i>Decentralized</span>
+							<span class="tag"><i class="fas fa-cloud"></i>Web app</span>
+							<span class="tag"><i class="fas fa-unlock"></i>Private & Open Source</span>
+						</p>
+					</div>
+				</details>
+
+				<details data-filter="111">
+					<summary>
+						Diaspora<span><i class="fas fa-sitemap"></i><i class="fas fa-cloud"></i><i class="fas fa-unlock"></i></span>
+					</summary>
+					<div class="">
+						Diaspora is a decentralized social network focusing on user privacy and digital freedom. With many instances covering various topics, diaspora is an open-source project managed by the non-profit Diaspora Foundation. <a class="hover" href="https://diasporafoundation.org" target="_blank">Open.</a>
+						<p>
+							<span class="tag"><i class="fas fa-sitemap"></i>Decentralized</span>
+							<span class="tag"><i class="fas fa-cloud"></i>Web app</span>
+							<span class="tag"><i class="fas fa-unlock"></i>Private & Open Source</span>
+						</p>
+					</div>
+				</details>
+
+				<details data-filter="111">
+					<summary>
+						Gab<span><i class="fas fa-comment"></i><i class="fas fa-cloud"></i><i class="fas fa-unlock"></i></span>
+					</summary>
+					<div class="">
+						Gab is an open-source web browser and social network championing free speech and individual liberty. <a class="hover" href="https://www.gab.com" target="_blank">Open.</a>
+						<p>
+							<span class="tag"><i class="fas fa-comment"></i>Free speech</span>
+							<span class="tag"><i class="fas fa-cloud"></i>Web app</span>
+							<span class="tag"><i class="fas fa-unlock"></i>Private & Open Source</span>
+						</p>
+					</div>
+				</details>
+
+				<details data-filter="111">
+					<summary>
+						Minds<span><i class="fas fa-dollar-sign"></i><i class="fas fa-globe"></i><i class="fas fa-unlock"></i></span>
+					</summary>
+					<div class="">
+						Minds is a	free and open-source social network focusing on privacy, transparency and decentralization. It uses blockchain to reward their users through various means, and is dedicated to fighting global surveillance and censorship. <a class="hover" href="https://www.minds.com" target="_blank">Open.</a>
+						<p>
+							<span class="tag"><i class="fas fa-dollar-sign"></i>Blockchain</span>
+							<span class="tag"><i class="fas fa-globe"></i>All platforms</span>
+							<span class="tag"><i class="fas fa-unlock"></i>Private & Open Source</span>
+						</p>
+					</div>
+				</details>
+			</div>
+		</section>
+
+		<section data-filter="111">
+			<div class="card">
+				<b>Online Chat</b>
+				<p><span class="tag"><i class="fas fa-times"></i>Avoid</span> Messenger, Hangouts, Skype...</p>
+				<p>Online chat platforms are really useful, but their (bad) privacy and security practices shouldn't be ignored. Use one of these alternatives for private and more secure conversations.</p>
+			</div>
+			<div class="card">
+				<details data-filter="111">
+					<summary>
+						Signal<span><i class="fas fa-globe"></i><i class="fas fa-unlock"></i></span>
+					</summary>
+					<div class="">
+						<a class="hover" href="https://www.signal.org" target="_blank">Open.</a>
+						<p>
+							<span class="tag"><i class="fas fa-globe"></i>All platforms</span>
+							<span class="tag"><i class="fas fa-unlock"></i>Private & Open Source</span>
+						</p>
+					</div>
+				</details>
+
+				<details data-filter="111">
+					<summary>
+						Element<span><i class="fas fa-globe"></i><i class="fas fa-unlock"></i></span>
+					</summary>
+					<div class="">
+						<a class="hover" href="https://telegram.org" target="_blank">Open.</a>
+						<p>
+							<span class="tag"><i class="fas fa-globe"></i>All platforms</span>
+							<span class="tag"><i class="fas fa-unlock"></i>Private & Open Source</span>
+						</p>
+					</div>
+				</details>
+
+				<details data-filter="111">
+					<summary>
+						Telegram<span><i class="fas fa-globe"></i><i class="fas fa-shield-alt"></i></span>
+					</summary>
+					<div class="">
+						<a class="hover" href="https://telegram.org" target="_blank">Open.</a>
+						<p>
+							<span class="tag"><i class="fas fa-globe"></i>All platforms</span>
+							<span class="tag"><i class="fas fa-shield-alt"></i>Privacy friendly</span>
+						</p>
+					</div>
+				</details>
+
+				<details data-filter="010">
+					<summary>
+						Silence<span><i class="fas fa-mobile-alt"></i><i class="fas fa-unlock"></i></span>
+					</summary>
+					<div class="">
+						<a class="hover" href="https://silence.im" target="_blank">Open.</a>
+						<p>
+							<span class="tag"><i class="fas fa-mobile-alt"></i>Android</span>
+							<span class="tag"><i class="fas fa-unlock"></i>Private & Open Source</span>
+						</p>
+					</div>
+				</details>
+			</div>
+		</section>
+
+		<section data-filter="111">
+			<div class="card">
+				<b>Search Engines</b>
+				<p><span class="tag"><i class="fas fa-times"></i>Avoid</span> Google, Bing, Yahoo...</p>
+				<p>If you want to search the web without being spied on and without being locked into an echo chamber, we highly suggest you to try these search engines. They all come with powerful search tools and strong privacy practices.</p>
+			</div>
+			<div class="card">
+				<details data-filter="111">
+					<summary>
+						DuckDuckGo<span><i class="fas fa-sitemap"></i><i class="fas fa-cloud"></i><i class="fas fa-shield-alt"></i></span>
+					</summary>
+					<div class="">
+						DuckDuckGo is a privacy-focused search engines compiling results from several sources. It offers all the standard web search tools, plus enriched web results and instant answers for a wide variety of queries, ranging from song lyrics to programming answers. <a class="hover" href="https://duckduckgo.com" target="_blank">Open.</a>
+						<p>
+							<span class="tag"><i class="fas fa-sitemap"></i>Multiple sources</span>
+							<span class="tag"><i class="fas fa-cloud"></i>Web app</span>
+							<span class="tag"><i class="fas fa-shield-alt"></i>Privacy friendly</span>
+						</p>
+					</div>
+				</details>
+
+				<details data-filter="111">
+					<summary>
+						Qwant<span><i class="fas fa-binoculars"></i><i class="fas fa-cloud"></i><i class="fas fa-shield-alt"></i></span>
+					</summary>
+					<div class="">
+						Qwant is another privacy oriented serach engine created in France. It comes with all the standard search tools and a custom news section, but its dedicated maps and music services really makes it stick out of the crowd. <a class="hover" href="https://www.qwant.com" target="_blank">Open.</a>
+						<p>
+							<span class="tag"><i class="fas fa-binoculars"></i>Mostly own results</span>
+							<span class="tag"><i class="fas fa-cloud"></i>Web app</span>
+							<span class="tag"><i class="fas fa-shield-alt"></i>Privacy friendly</span>
+						</p>
+					</div>
+				</details>
+
+				<details data-filter="111">
+					<summary>
+						Searx<span><i class="fas fa-sitemap"></i><i class="fas fa-cloud"></i><i class="fas fa-unlock"></i></span>
+					</summary>
+					<div class="">
+						Searx is an open-source and decentralized search engine that pulls its results from multiple, customizable sources. It comes with a strong privacy policy. <a class="hover" href="https://searx.space" target="_blank">Open.</a>
+						<p>
+							<span class="tag"><i class="fas fa-sitemap"></i>Multiple sources</span>
+							<span class="tag"><i class="fas fa-cloud"></i>Web app</span>
+							<span class="tag"><i class="fas fa-unlock"></i>Open Source</span>
+						</p>
+					</div>
+				</details>
+
+				<details data-filter="111">
+					<summary>
+						Startpage<span><i class="fab fa-google"></i><i class="fas fa-cloud"></i><i class="fas fa-shield-alt"></i></span>
+					</summary>
+					<div class="">
+						Startpage redistributes google results in an anonymized fashion. it comes with good privacy practices and comes with a unique "anonymous view" feature to peek at websites without them ever knowing about it. <a class="hover" href="https://www.startpage.com" target="_blank">Open.</a>
+						<p>
+							<span class="tag"><i class="fab fa-google"></i>Google results</span>
+							<span class="tag"><i class="fas fa-cloud"></i>Web app</span>
+							<span class="tag"><i class="fas fa-shield-alt"></i>Privacy friendly</span>
+						</p>
+					</div>
+				</details>
+			</div>
+		</section>
+
+		<section data-filter="111">
+			<div class="card">
+				<b>Web Browsers</b>
+				<p><span class="tag"><i class="fas fa-times"></i>Avoid</span> Google Chrome, Microsoft Edge...</p>
+				<p>Web browers are the portal that we use to connect to the web. ...</p>
+			</div>
+			<div class="card">
+				<details data-filter="111">
+					<summary>
+						Firefox<span><i class="fas fa-globe"></i><i class="fas fa-unlock"></i></span>
+					</summary>
+					<div class="">
+						Text <a class="hover" href="https://www.mozilla.org/firefox/new" target="_blank">Open.</a>
+						<p>
+							<span class="tag"><i class="fas fa-globe"></i>All platforms</span>
+							<span class="tag"><i class="fas fa-unlock"></i>Private & Open Source</span>
+						</p>
+					</div>
+				</details>
+
+				<details data-filter="101">
+					<summary>
+						Chromium<span><i class="fas fa-desktop"></i><i class="fas fa-unlock"></i></span>
+					</summary>
+					<div class="">
+						Text <a class="hover" href="https://chromium.woolyss.com" target="_blank">Open.</a>
+						<p>
+							<span class="tag"><i class="fas fa-desktop"></i>All desktops</span>
+							<span class="tag"><i class="fas fa-unlock"></i>Private & Open Source</span>
+						</p>
+					</div>
+				</details>
+
+				<details data-filter="111">
+					<summary>
+						Brave<span><i class="fas fa-globe"></i><i class="fas fa-unlock"></i></span>
+					</summary>
+					<div class="">
+						Text <a class="hover" href="https://brave.com" target="_blank">Open.</a>
+						<p>
+							<span class="tag"><i class="fas fa-globe"></i>All platforms</span>
+							<span class="tag"><i class="fas fa-unlock"></i>Private & Open Source</span>
+						</p>
+					</div>
+				</details>
+
+				<details data-filter="111">
+					<summary>
+						Tor<span><i class="fas fa-globe"></i><i class="fas fa-unlock"></i></span>
+					</summary>
+					<div class="">
+						Text <a class="hover" href="https://www.torproject.org" target="_blank">Open.</a>
+						<p>
+							<span class="tag"><i class="fas fa-globe"></i>All platforms</span>
+							<span class="tag"><i class="fas fa-unlock"></i>Private & Open Source</span>
+						</p>
+					</div>
+				</details>
+			</div>
+		</section>
+
+		<section data-filter="111">
+			<div class="card">
+				<b>Cloud Providers</b>
+				<p><span class="tag"><i class="fas fa-times"></i>Avoid</span> Dropbox, Google Drive, Onedrive...</p>
+				<p>While they are very convenient, cloud providers like Dropbox and Google Drive have very bad privacy policies that enable them to possibly see the files you upload there, and aren't very secure. The following replacements offer better security and strong privacy practices.</p>
+			</div>
+			<div class="card">
+				<details data-filter="111">
+					<summary>
+						Nextcloud<span><i class="fas fa-globe"></i><i class="fas fa-unlock"></i></span>
+					</summary>
+					<div class="">
+						<a class="hover" href="https://nextcloud.com" target="_blank">Open.</a>
+						<p>
+							<span class="tag"><i class="fas fa-globe"></i>All platforms</span>
+							<span class="tag"><i class="fas fa-unlock"></i>Private & Open Source</span>
+						</p>
+					</div>
+				</details>
+			</div>
+		</section>
+
+		<section data-filter="111">
+			<div class="card">
+				<b>Mail Providers</b>
+				<p><span class="tag"><i class="fas fa-times"></i>Avoid</span> Gmail</p>
+				<p>Nowadays, free mail prividers like Gmail actively scan emails to offer you relevant ads, and internet proividers can't all be trusted with private communications. If you need a truly secure email adress, try one of the services below.</p>
+			</div>
+			<div class="card">
+				<details data-filter="111">
+					<summary>
+						Protonmail<span><i class="fas fa-globe"></i><i class="fas fa-unlock"></i></span>
+					</summary>
+					<div class="">
+						Protonmail is a Suiss-based, secure and open-source mail provider. Offering 500MB of storage with a free account, Protonmail uses end-to-end encryption to protect your communications, so even the creators can't access your data. <a class="hover" href="https://protonmail.com" target="_blank">Open.</a>
+						<p>
+							<span class="tag"><i class="fas fa-globe"></i>All platforms</span>
+							<span class="tag"><i class="fas fa-unlock"></i>Private & Open Source</span>
+						</p>
+					</div>
+				</details>
+
+				<details data-filter="111">
+					<summary>
+						Tutanota<span><i class="fas fa-globe"></i><i class="fas fa-unlock"></i></span>
+					</summary>
+					<div class="">
+						Tutanota is a great open-source and secure mail provider. Along with its modern and ergonomic client, Tutanota lets you create a private calendar and contact list, and offers 1GB of storage with a free account. Tutanota also uses end-to-end encryption. <a class="hover" href="https://www.tutanota.com" target="_blank">Open.</a>
+						<p>
+							<span class="tag"><i class="fas fa-globe"></i>All platforms</span>
+							<span class="tag"><i class="fas fa-unlock"></i>Private & Open Source</span>
+						</p>
+					</div>
+				</details>
+			</div>
+		</section>
+
+		<section data-filter="110">
+			<div class="card">
+				<b>Mail Clients</b>
+				<p><span class="tag"><i class="fas fa-times"></i>Avoid</span> Gmail, Outlook</p>
+				<p>In order to fuel "smart" functionnalities in mail clients, big corporations collect unreasonable amounts of data about their users and private communications. Choosing a more privacy-respecting mail client is key to your digital freedom.</p>
+			</div>
+			<div class="card">
+				<details data-filter="100">
+					<summary>
+						Thunderbird<span><i class="fas fa-desktop"></i><i class="fas fa-unlock"></i></span>
+					</summary>
+					<div class="">
+						Thunderbird is a free and open-source mail client created by Mozilla. Completely private, it is a full featured mail client which allows you to save your mails in order to work offline. <a class="hover" href="https://www.thunderbird.net" target="_blank">Open.</a>
+						<p>
+							<span class="tag"><i class="fas fa-desktop"></i>All desktops</span>
+							<span class="tag"><i class="fas fa-unlock"></i>Private & Open Source</span>
+						</p>
+					</div>
+				</details>
+
+				<details data-filter="010">
+					<summary>
+						K9 Mail<span><i class="fas fa-mobile-alt"></i><i class="fas fa-unlock"></i></span>
+					</summary>
+					<div class="">
+						K9 Mail is a free and secure Android mail client. Completely open-source, K9 recently received a complete redesign in order to be more modern and ergonomic. <a class="hover" href="https://k9mail.app" target="_blank">Open.</a>
+						<p>
+							<span class="tag"><i class="fas fa-mobile-alt"></i>Android</span>
+							<span class="tag"><i class="fas fa-unlock"></i>Private & Open Source</span>
+						</p>
+					</div>
+				</details>
+
+				<details data-filter="010">
+					<summary>
+						Fair Email<span><i class="fas fa-mobile-alt"></i><i class="fas fa-unlock"></i></span>
+					</summary>
+					<div class="">
+						Fair Email is a great free and open-source mail client for Android. Focusing on privacy, Fair Email offers all the fetures you expect to get in a modren mail client. <a class="hover" href="https://email.faircode.eu/" target="_blank">Open.</a>
+						<p>
+							<span class="tag"><i class="fas fa-mobile-alt"></i>Android</span>
+							<span class="tag"><i class="fas fa-unlock"></i>Private & Open Source</span>
+						</p>
+					</div>
+				</details>
+			</div>
+		</section>
+
+		<section data-filter="110">
+			<div class="card">
+				<b>Operating Systems</b>
+				<p><span class="tag"><i class="fas fa-times"></i>Avoid</span> Windows, Mac, Android</p>
+				<p>Text</p>
+			</div>
+			<div class="card">
+				<details data-filter="110">
+					<summary>
+						Linux<span><i class="fas fa-globe"></i><i class="fas fa-unlock"></i></span>
+					</summary>
+					<div class="">
+						Text <a class="hover" href="distros.html" target="_blank">Learn more.</a>
+						<p>
+							<span class="tag"><i class="fas fa-globe"></i>All devices</span>
+							<span class="tag"><i class="fas fa-unlock"></i>Private & Open Source</span>
+						</p>
+					</div>
+				</details>
+
+				<details data-filter="100">
+					<summary>
+						BSD<span><i class="fas fa-desktop"></i><i class="fas fa-unlock"></i></span>
+					</summary>
+					<div class="">
+						Text <a class="hover" href="https://duckduckgo.com/?q=bsd+os" target="_blank">Learn more.</a>
+						<p>
+							<span class="tag"><i class="fas fa-desktop"></i>Desktop</span>
+							<span class="tag"><i class="fas fa-unlock"></i>Private & Open Source</span>
+						</p>
+					</div>
+				</details>
+
+				<details data-filter="010">
+					<summary>
+						AOSP<span><i class="fas fa-mobile-alt"></i><i class="fas fa-unlock"></i></span>
+					</summary>
+					<div class="">
+						Android Open Source Project without Google apps and services or any fork like <a class="hover" href="https://lineageos.org/" target="_blank">LineageOS</a>, <a class="hover" href="https://grapheneos.org/" target="_blank">GrapheneOS</a> or other alternatives...
+						<p>
+							<span class="tag"><i class="fas fa-mobile-alt"></i>Phone</span>
+							<span class="tag"><i class="fas fa-unlock"></i>Private & Open Source</span>
+						</p>
+					</div>
+				</details>
+			</div>
+		</section>
+
+		<!-- <section data-filter="111">
+			<div class="card">
+				<b>Title</b>
+				<p><span class="tag"><i class="fas fa-times"></i>Avoid</span> Platforms</p>
+				<p>Text</p>
+			</div>
+			<div class="card">
+				<details data-filter="111">
+					<summary>
+						Title<span><i class="fas fa-tag"></i><i class="fas fa-tag"></i></span>
+					</summary>
+					<div class="">
+						Text <a class="hover" href="Adress" target="_blank">Open.</a>
+						<p>
+							<span class="tag"><i class="fas fa-tag"></i>Tag</span>
+							<span class="tag"><i class="fas fa-tag"></i>Tag</span>
+						</p>
+					</div>
+				</details>
+			</div>
+		</section> -->
+
+	</section>
+
+</main>
+</body>
+
+</html>
+

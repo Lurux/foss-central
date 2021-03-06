@@ -26,24 +26,7 @@
 	margin-top: 10px;
 }
 
-.software-grid summary {
-	cursor: pointer;
-	outline: none;
 
-	-moz-user-select: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
-.software-grid summary:hover {
-	background-color: #f4f4f4;
-}
 .software-grid summary span {
 	float: right;
-}
-
-@media (prefers-color-scheme: dark) {
-	.software-grid summary:hover {
-		background-color: #333333;
-	}
 }

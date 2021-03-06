@@ -86,6 +86,6 @@ function dosearch(site) {
 }
 
 function closesearch() {
-	document.getElementById("search").style.display = "none";
+	try { document.getElementById("search").style.display = "none"; } catch(e) {}
 }
 
