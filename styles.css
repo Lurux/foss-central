@@ -197,6 +197,9 @@ i.fas, i.fab, .nosmall {
 	display: inline-block;
 	max-width: calc(100% + 10px);
 }
+.flex > *, .column > * {
+	display: block;	/* Compatibility fallback */
+}
 
 .blue {
 	background-color: #ccd9ff;
