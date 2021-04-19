@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="/foss-central/styles.css">
 
 	<script src="/foss-central/scripts.js"></script>
+	<script>function showcontent(elm){window.setTimeout(function(){elm.nextSibling.innerHTML="lurux-dev"+'@'+"protonmail.com";},1000);}</script>
 </head>
 
 <body>
@@ -32,12 +33,6 @@
 
 <main class="frame">
 
-	<section class="section card blue">
-		<b>Work in progress !</b><br><br>
-		This website is a work in progress ! Some pages and description may be missing or inaccurate. Don't hesitate to go to our <a style="text-decoration: underline;" href="https://github.com/Lurux/foss-central" target="_blank">Github</a> page if you want to help out !<br>
-		Additional info and general tips about this site will soon be shown here.
-	</section>
-
 	<section class="section">
 		<div class="padding title">
 			<b>FOSS Central, Beta 0.5</b>
@@ -55,6 +50,15 @@
 			We also aim to be a portal giving you access to various other open-source and privacy-related ressources thanks to our directory of useful websites.
 		</div>
 		<div class="padding">
+			<b>Contact</b>
+		</div>
+		<div class="padding">
+			If you found an error or want to suggest more content, feel free to post an <a href="https://github.com/Lurux/foss-central/issues" class="hover" target="_blank">issue</a> on github.
+			<details>
+				<summary onclick="showcontent(this)">Show contact</summary><div><i class="fas fa-circle-notch fa-spin"></i> Loading...</div>
+			</details>
+		</div>
+		<div class="padding">
 			<b>Contribute</b>
 		</div>
 		<div class="padding">
@@ -67,6 +71,12 @@
 			If you don't want your website to appear on our list, just fill an issue on Github and we'll remove it !<br/>
 			This website is distributed under the Mozilla Public License 2.0.
 		</div>
+	</section>
+
+	<section class="section card blue">
+		<b>Work in progress !</b><br><br>
+		This website is a work in progress ! Some pages and description may be missing or inaccurate. Don't hesitate to go to our <a style="text-decoration: underline;" href="https://github.com/Lurux/foss-central" target="_blank">Github</a> page if you want to help out !<br>
+		Additional info and general tips about this site will soon be shown here.
 	</section>
 
 </main>
