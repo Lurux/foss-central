@@ -14,13 +14,13 @@ Visit us at https://lurux.github.io/foss-central/ !
 
 ### Future
 
-- Improve distros page
+- Improve distros page (WIP)
 - Improve software pages
 - Privacy dashboards
 - Linux Hardware
 - Android ROMs
 
-[See more](/info/ROADMAP.md)
+[See more](/about/ROADMAP.md)
 
 ## Contribute
 
