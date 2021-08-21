@@ -10,7 +10,10 @@
 <br/>
 
 - 2 improved pages, 2 enhancements, 1 new resource
-- 29 July 2020
+- July 29, 2020
+<br/>
+
+- Patched August 9, 2020
 
 ### Beta 0.4 ✓
 
@@ -22,18 +25,22 @@
 <br/>
 
 - 1 improved page, 4 enhancements
-- 8 October 2020
+- October 8, 2020
+<br/>
+
+- Patched October 18, 2020
 
 ### Beta 0.5 ✓
 
 - New hierarchical organization
 - New dedicated resource pages
 - Updated styles
+- Mini-browser toggle on resources
 - No mini-browser for local pages
 <br/>
 
 - Basically a big refresh
-- 8 October 2020
+- March 6, 2021
 
 ### Future
 
@@ -44,9 +51,6 @@
 - Privacy dashboards
 - Linux Hardware
 - Android ROMs
-<br/>
-
-- 4 improved page, 2 enhancements, 3 new resources
 
 ### Release 1.0
 
