@@ -224,7 +224,7 @@ a.hover, a.hover > i {
 	color: dodgerblue !important;
 }
 a.hover {
-	float: right;
+	/* float: right; */
 }
 
 .tag {
