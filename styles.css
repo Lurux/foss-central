@@ -19,16 +19,24 @@ body {
 }
 
 .title {
-	margin: 16px 0;
-	opacity: 0.5;
+	opacity: 0.6;
+	padding: 10px;
 }
 
 .section {
-	margin: 20px 0;
+	padding: 20px 0;
 }
+
+.magicard .section {
+	padding: 20px 10px;
+}
+.section-bottom {
+	padding: 0 10px;
+	margin-bottom: 20px;
+}
+
 .separator {
 	border-top: 1px solid gray;
-	padding-top: 20px;
 }
 
 .buttonbar {
@@ -52,7 +60,7 @@ body {
 	-ms-user-select: none;
 	user-select: none;
 }
-.buttonbar > span:hover, a.card:hover, #search > .card:hover {
+.buttonbar > span:hover, a.card:hover, .card.hover:hover, .hoverblock:hover, #search > .card:hover {
 	background-color: #f4f4f4 !important;
 }
 
@@ -73,25 +81,25 @@ body {
 	background-color: white;
 }
 
-.card:not(.invisible), .card.invisible:hover, #search {
+.card:not(.invisible), .card.invisible:hover, #search, .magicard[open] {
 	box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.4); /* Old: 1px 1px 3px 0px rgba(0, 0, 0, 0.5), Firefox: 0 1px 8px 0 rgba(12, 12, 13, 0.2) */
 }
-.card:not(.invisible), #search {
+.card:not(.invisible), #search, .magicard[open] {
 	background-color: white;
 }
-.card, #search {
-	border-radius: 5px; /* Old: 6px, Firefox: 3px */
+.card, #search, .magicard:not(.section), summary {
+	border-radius: 6px; /* Old: 5px, Firefox: 3px */
+	overflow: hidden;
 }
 
 #search {
 	position: fixed;
-	width: 60%;
-	top: 65px;
-	left:20%;
+	top: 0;
+	width: 100vw;
 	display: none;
 	border-radius: 6px;
 
-	max-height: calc(100vh - 85px);
+	height: 100vh;
 	overflow: auto;
 }
 
@@ -178,7 +186,7 @@ b {
 	font-size: larger;
 }
 
-i:not(.fas):not(.fab) {
+i:not(.fas):not(.fab), .opacity {
 	font-style: normal;
 	opacity: 0.5;
 }
@@ -197,9 +205,6 @@ i.fas, i.fab, .nosmall {
 	display: inline-block;
 	max-width: calc(100% + 10px);
 }
-.flex > *, .column > * {
-	display: block;	/* Compatibility fallback */
-}
 
 .blue {
 	background-color: #ccd9ff;
@@ -216,15 +221,20 @@ i.fas, i.fab, .nosmall {
 .hover:hover {
 	filter: brightness(96%);
 }
-.hover:active, .invisible:active {
+.hover:active {
 	filter: brightness(92%);
 }
 
 a.hover, a.hover > i {
 	color: dodgerblue !important;
 }
-a.hover {
-	/* float: right; */
+a.float {
+	float: right;
+}
+
+.hoverblock {
+	display: block;
+	padding: 10px;
 }
 
 .tag {
@@ -251,26 +261,6 @@ a.hover {
 	font-weight: bold;
 }
 
-.toggle > i {
-	font-size: larger;
-}
-.toggle > input {
-	opacity: 0;
-	position: absolute;
-	cursor: pointer;
-	width: 18px;
-}
-.toggle > input:checked + i::before {
-	content: "\f205";
-}
-.toggle > input:not(:checked) + i::before {
-	content: "\f204";
-}
-
-#extb.boff .ext {
-	display: none;
-}
-
 
 .supersecretbutton {
 	opacity: 0.5;
@@ -280,6 +270,10 @@ a.hover {
 	opacity: 0;
 }
 
+
+ul {
+	padding: 10px 0 10px 40px;
+}
 
 
 summary {
@@ -296,6 +290,25 @@ summary:hover {
 }
 
 
+
+#search, #modal {
+	animation: float 0.2s ease;
+}
+
+@keyframes float {
+	from {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+
+
 @media (max-width: 800px) {
 	.nosmall { display: none; }
 }
@@ -303,27 +316,43 @@ summary:hover {
 @media (max-width: 515px) {
 	.frame { width: 100%; }
 	.card { border-radius: 0 !important; }
-	#search { width: 100%; left: 0; }
 	.column { grid-template-columns: 1fr; }
 }
 
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #282828;
-    }
-
-	.card:not(.invisible), #search, #modal > iframe {
-        background-color: #383838;
+@media (min-width: 515px) {
+	#modal {
+		width: 80vw;
+		left: 10vw;
+		top: 10vh;
 	}
-	.buttonbar > span:hover, a.card:hover, #search > .card:hover {
+	#modal > iframe {
+		width: 80vw;
+		height: calc(80vh - 45px);
+	}
+
+	#search {
+		width: 60vw;
+		left: 20vw;
+		top: 40px;
+
+		height: auto;
+		max-height: calc(100vh - 80px);
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #232323;
+	}
+
+	.card:not(.invisible), #search, #modal > iframe, .magicard[open] {
+		background-color: #2d2d2d;
+	}
+	.buttonbar > span:hover, a.card:hover, .card.hover:hover, .hoverblock:hover, #search > .card:hover, summary:hover {
 		background-color: #333333 !important;
 	}
 
-	summary:hover {
-		background-color: #333333;
-	}
-
 	*:not(#searchbox), a {
-        color: #f9f9f9;
+		color: #f9f9f9;
 	}
 }

@@ -5,12 +5,11 @@ Portal providing ressources and information about Linux, open-source, and digita
 Visit us at https://lurux.github.io/foss-central/ !
 
 ## Roadmap
-### Beta 0.5 ✓
+### Beta 0.6 ✓
 
-- New hierarchical organization
-- New dedicated resource pages
 - Updated styles
-- No mini-browser for local pages
+- Fix broken search and video embeds on some pages
+- Remember mini-browser toggle setting
 
 ### Future
 

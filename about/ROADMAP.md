@@ -42,6 +42,15 @@
 - Basically a big refresh
 - March 6, 2021
 
+### Beta 0.6 ✓
+
+- Updated styles
+- Fix broken search and video embeds on some pages
+- Remember mini-browser toggle setting
+<br/>
+
+- Jan 22, 2022
+
 ### Future
 
 - Improve distros page
@@ -50,7 +59,10 @@
 - Add illustrations
 - Privacy dashboards
 - Linux Hardware
+- Linux DEs
 - Android ROMs
+- Threat model
+<br/>
 
 ### Release 1.0
 
